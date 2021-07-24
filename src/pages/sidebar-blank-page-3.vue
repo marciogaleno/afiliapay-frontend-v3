@@ -1,0 +1,35 @@
+<script setup lang="ts">
+/**
+ * This is a Vue Component that will be
+ * automatically mapped to a entry on vue-router.
+ *
+ * You will be able to access this page at http://localhost:3000/sidebar-blank-page-3
+ * Page uri will match related path to src/pages folder
+ *
+ * Read more about routing:
+ * @see /vite.config.ts
+ * @see /src/router.ts
+ */
+
+import { useHead } from '@vueuse/head'
+import { pageTitle } from '/@src/state/sidebarLayoutState'
+
+pageTitle.value = 'Blank Page 3'
+useHead({
+  title: 'Blank Page 3 - Sidebar - Vuero',
+})
+</script>
+
+<template>
+  <SidebarLayout theme="color">
+    <!-- Content Wrapper -->
+    <div class="page-content-inner">
+      <!--
+          Page content goes here
+
+          You can see pages content samples from 
+          files in /src/components/pages directory
+        -->
+    </div>
+  </SidebarLayout>
+</template>
