@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "dev:force": "vite --force",
-    "preview": "vite preview --port 8080",
+    "preview": "vite preview --port 80",
     "build": "vite build",
     "lint": "run-s lint:doc:fix lint:eslint:fix lint:stylelint:fix lint:prettier:fix",
     "lint:prettier": "prettier --check \"./src/**/*.(ts|vue|css|scss)\"",
