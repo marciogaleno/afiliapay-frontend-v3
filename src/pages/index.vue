@@ -56,7 +56,7 @@ useHead({
               </div>
             </div>
             <h1 class="title is-1 is-bold is-light is-bold">
-              The World Needs a <span>Vuero</span>.
+              Teste a <span>Vuero</span>.
             </h1>
             <h3 class="subtitle is-4 is-light">
               Premium Webapp UI Kit.
