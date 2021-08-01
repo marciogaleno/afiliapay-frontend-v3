@@ -52,7 +52,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <V-Avatar
-                picture="/demo/avatars/12.jpg"
+                picture="https://vuero.cssninja.io/demo/avatars/12.jpg"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -79,7 +79,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <V-Avatar
-                picture="/demo/avatars/25.jpg"
+                picture="https://vuero.cssninja.io/demo/avatars/25.jpg"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -106,7 +106,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <V-Avatar
-                picture="/demo/avatars/18.jpg"
+                picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -133,7 +133,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <V-Avatar
-                picture="/demo/avatars/13.jpg"
+                picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -198,9 +198,18 @@ const activeTab = ref<TabId>('team')
                   <span>5 / 24</span>
 
                   <div class="avatar-stack">
-                    <V-Avatar size="small" picture="/demo/avatars/5.jpg" />
-                    <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                    <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
+                    <V-Avatar
+                      size="small"
+                      picture="https://vuero.cssninja.io/demo/avatars/5.jpg"
+                    />
+                    <V-Avatar
+                      size="small"
+                      picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                    />
+                    <V-Avatar
+                      size="small"
+                      picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
+                    />
                   </div>
                 </div>
               </div>
@@ -241,8 +250,14 @@ const activeTab = ref<TabId>('team')
                   <span>28 / 31</span>
 
                   <div class="avatar-stack">
-                    <V-Avatar size="small" picture="/demo/avatars/13.jpg" />
-                    <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
+                    <V-Avatar
+                      size="small"
+                      picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
+                    />
+                    <V-Avatar
+                      size="small"
+                      picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
+                    />
                   </div>
                 </div>
               </div>
@@ -283,8 +298,14 @@ const activeTab = ref<TabId>('team')
                   <span>25 / 39</span>
 
                   <div class="avatar-stack">
-                    <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                    <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
+                    <V-Avatar
+                      size="small"
+                      picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                    />
+                    <V-Avatar
+                      size="small"
+                      picture="https://vuero.cssninja.io/demo/avatars/25.jpg"
+                    />
                   </div>
                 </div>
               </div>
@@ -317,7 +338,7 @@ const activeTab = ref<TabId>('team')
                 <div class="timeline-icon">
                   <img
                     class="avatar"
-                    src="/demo/avatars/7.jpg"
+                    src="https://vuero.cssninja.io/demo/avatars/7.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'

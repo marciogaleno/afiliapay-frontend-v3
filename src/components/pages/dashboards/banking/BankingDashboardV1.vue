@@ -282,7 +282,10 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar picture="/demo/avatars/18.jpg" size="small" />
+                    <V-Avatar
+                      picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
+                      size="small"
+                    />
                     <template #content>
                       <UserPopoverContent :user="popovers.user18" />
                     </template>
@@ -304,7 +307,10 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
+                    <V-Avatar
+                      picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                      size="small"
+                    />
                     <template #content>
                       <UserPopoverContent :user="popovers.user7" />
                     </template>

@@ -48,7 +48,7 @@ useHead({
             <V-Block title="Anna B." subtitle="UX Designer" center>
               <template #icon>
                 <V-Avatar
-                  picture="/demo/avatars/19.jpg"
+                  picture="https://vuero.cssninja.io/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                 />
               </template>
@@ -96,7 +96,7 @@ useHead({
             <V-Block title="Anna B." subtitle="UX Designer" center>
               <template #icon>
                 <V-Avatar
-                  picture="/demo/avatars/19.jpg"
+                  picture="https://vuero.cssninja.io/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                 />
               </template>
@@ -127,7 +127,7 @@ useHead({
             <V-Block title="Anna B." subtitle="UX Designer" center>
               <template #icon>
                 <V-Avatar
-                  picture="/demo/avatars/19.jpg"
+                  picture="https://vuero.cssninja.io/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                 />
               </template>

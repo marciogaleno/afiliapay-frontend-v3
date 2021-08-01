@@ -8,12 +8,30 @@
     </div>
 
     <div class="avatar-stack">
-      <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/9.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/12.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/22.jpg" />
+      <V-Avatar
+        size="small"
+        picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+      />
+      <V-Avatar
+        size="small"
+        picture="https://vuero.cssninja.io/demo/avatars/9.jpg"
+      />
+      <V-Avatar
+        size="small"
+        picture="https://vuero.cssninja.io/demo/avatars/12.jpg"
+      />
+      <V-Avatar
+        size="small"
+        picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
+      />
+      <V-Avatar
+        size="small"
+        picture="https://vuero.cssninja.io/demo/avatars/25.jpg"
+      />
+      <V-Avatar
+        size="small"
+        picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
+      />
     </div>
 
     <a class="button v-button is-primary is-raised is-bold">

@@ -33,9 +33,15 @@ const textarea = ref('')
     <V-Control textaddon>
       <div class="start">
         <div class="avatar-stack">
-          <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
+          <V-Avatar
+            picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+            size="small"
+          />
           <V-Avatar initials="JO" color="info" size="small" />
-          <V-Avatar picture="/demo/avatars/8.jpg" size="small" />
+          <V-Avatar
+            picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
+            size="small"
+          />
         </div>
       </div>
       <div class="end">
@@ -62,9 +68,9 @@ const textarea = ref('')
   <V-Control textaddon>
     <div class="start">
       <div class="avatar-stack">
-        <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
+        <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/7.jpg" size="small" />
         <V-Avatar initials="JO" color="info" size="small" />
-        <V-Avatar picture="/demo/avatars/8.jpg" size="small" />
+        <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/8.jpg" size="small" />
       </div>
     </div>
     <div class="end">

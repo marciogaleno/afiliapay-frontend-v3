@@ -80,8 +80,8 @@ onMounted(async () => {
         <div class="dashboard-card is-company">
           <V-Avatar
             size="big"
-            picture="/demo/photos/brands/udemy.svg"
-            picture-dark="/demo/photos/brands/udemy-dark.svg"
+            picture="https://vuero.cssninja.io/demo/photos/brands/udemy.svg"
+            picture-dark="https://vuero.cssninja.io/demo/photos/brands/udemy-dark.svg"
           >
             <template #badge>
               <button class="button icon-button is-circle is-dark-outlined">
@@ -349,7 +349,10 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/31.jpg" />
+                  <V-Avatar
+                    size="medium"
+                    picture="https://vuero.cssninja.io/demo/avatars/31.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user31" />
                   </template>
@@ -376,7 +379,10 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/23.jpg" />
+                  <V-Avatar
+                    size="medium"
+                    picture="https://vuero.cssninja.io/demo/avatars/23.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user23" />
                   </template>
@@ -403,7 +409,10 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/32.jpg" />
+                  <V-Avatar
+                    size="medium"
+                    picture="https://vuero.cssninja.io/demo/avatars/32.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user32" />
                   </template>
@@ -430,7 +439,10 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/13.jpg" />
+                  <V-Avatar
+                    size="medium"
+                    picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>

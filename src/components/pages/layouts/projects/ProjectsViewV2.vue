@@ -98,8 +98,14 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
+                />
                 <V-Avatar size="small" color="danger" initials="DC" />
               </div>
             </div>
@@ -140,7 +146,10 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/25.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -180,8 +189,14 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/23.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/23.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -222,7 +237,10 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/11.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/11.jpg"
+                />
                 <V-Avatar size="small" color="h-orange" initials="AG" />
               </div>
             </div>
@@ -263,7 +281,10 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/12.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/12.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -303,9 +324,18 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/24.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/16.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/24.jpg"
+                />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
+                />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/16.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -387,7 +417,10 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/25.jpg"
+                />
                 <V-Avatar size="small" color="info" initials="ET" />
               </div>
             </div>

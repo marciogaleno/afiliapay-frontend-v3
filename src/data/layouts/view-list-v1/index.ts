@@ -6,7 +6,7 @@ export const users = [
     role: 'Project Manager',
     roleColor: 'primary',
     medias: {
-      avatar: '/demo/avatars/5.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/5.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -15,8 +15,8 @@ export const users = [
       posts: 16,
     },
     teams: [
-      { picture: '/demo/avatars/9.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/9.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
     ],
   },
   {
@@ -26,7 +26,7 @@ export const users = [
     role: 'Web Developer',
     roleColor: 'orange',
     medias: {
-      avatar: '/demo/avatars/34.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/34.jpg',
       flag: '/images/icons/flags/canada.svg',
     },
     stats: {
@@ -35,9 +35,9 @@ export const users = [
       posts: 5,
     },
     teams: [
-      { picture: '/demo/avatars/12.jpg' },
-      { picture: '/demo/avatars/22.jpg' },
-      { picture: '/demo/avatars/40.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/12.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/22.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/40.jpg' },
     ],
   },
   {
@@ -47,7 +47,7 @@ export const users = [
     role: 'Product Manager',
     roleColor: 'secondary',
     medias: {
-      avatar: '/demo/avatars/8.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/8.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -56,8 +56,8 @@ export const users = [
       posts: 16,
     },
     teams: [
-      { picture: '/demo/avatars/7.jpg' },
-      { picture: '/demo/avatars/23.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/7.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/23.jpg' },
     ],
   },
   {
@@ -67,7 +67,7 @@ export const users = [
     role: 'Mobile Developer',
     roleColor: 'orange',
     medias: {
-      avatar: '/demo/avatars/40.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/40.jpg',
       flag: '/images/icons/flags/france.svg',
     },
     stats: {
@@ -76,14 +76,14 @@ export const users = [
       posts: 8,
     },
     teams: [
-      { picture: '/demo/avatars/18.jpg' },
-      { picture: '/demo/avatars/13.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/18.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/13.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
     ],
   },
   {
@@ -93,7 +93,7 @@ export const users = [
     role: 'HR Manager',
     roleColor: 'primary',
     medias: {
-      avatar: '/demo/avatars/27.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/27.jpg',
       flag: '/images/icons/flags/spain.svg',
     },
     stats: {
@@ -101,7 +101,7 @@ export const users = [
       replies: 158,
       posts: 54,
     },
-    teams: [{ picture: '/demo/avatars/18.jpg' }],
+    teams: [{ picture: 'https://vuero.cssninja.io/demo/avatars/18.jpg' }],
   },
   {
     id: '9',
@@ -110,7 +110,7 @@ export const users = [
     role: 'UI/UX Designer',
     roleColor: 'green',
     medias: {
-      avatar: '/demo/avatars/9.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/9.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -119,8 +119,8 @@ export const users = [
       posts: 12,
     },
     teams: [
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
     ],
   },
   {
@@ -130,7 +130,7 @@ export const users = [
     role: 'UI/UX Designer',
     roleColor: 'green',
     medias: {
-      avatar: '/demo/avatars/18.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/18.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -139,16 +139,16 @@ export const users = [
       posts: 16,
     },
     teams: [
-      { picture: '/demo/avatars/27.jpg' },
-      { picture: '/demo/avatars/16.jpg' },
-      { picture: '/demo/avatars/29.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/27.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/16.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/29.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
     ],
   },
   {
@@ -158,7 +158,7 @@ export const users = [
     role: 'Business Analyst',
     roleColor: 'primary',
     medias: {
-      avatar: '/demo/avatars/10.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/10.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -167,8 +167,8 @@ export const users = [
       posts: 2,
     },
     teams: [
-      { picture: '/demo/avatars/32.jpg' },
-      { picture: '/demo/avatars/22.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/32.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/22.jpg' },
     ],
   },
   {
@@ -178,7 +178,7 @@ export const users = [
     role: 'Web Developer',
     roleColor: 'orange',
     medias: {
-      avatar: '/demo/avatars/25.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/25.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -187,11 +187,11 @@ export const users = [
       posts: 4,
     },
     teams: [
-      { picture: '/demo/avatars/26.jpg' },
-      { picture: '/demo/avatars/38.jpg' },
-      { picture: '/demo/avatars/21.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
-      { picture: '/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/26.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/38.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/21.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg' },
     ],
   },
   {
@@ -201,7 +201,7 @@ export const users = [
     role: 'Software Engineer',
     roleColor: 'orange',
     medias: {
-      avatar: '/demo/avatars/7.jpg',
+      avatar: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -210,8 +210,8 @@ export const users = [
       posts: 14,
     },
     teams: [
-      { picture: '/demo/avatars/9.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/9.jpg' },
+      { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
     ],
   },
 ]

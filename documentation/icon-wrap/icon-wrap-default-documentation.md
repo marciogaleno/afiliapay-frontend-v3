@@ -13,8 +13,8 @@ See code for more details about usage.
   <V-IconWrap icon="feather:user" color="secondary" />
   <V-IconWrap icon="feather:x" color="danger" />
   <V-IconWrap icon="feather:code" color="black" />
-  <V-IconWrap picture="/demo/avatars/8.jpg" />
-  <V-IconWrap picture="/demo/avatars/13.jpg" />
+  <V-IconWrap picture="https://vuero.cssninja.io/demo/avatars/8.jpg" />
+  <V-IconWrap picture="https://vuero.cssninja.io/demo/avatars/13.jpg" />
 </template>
 ```
 
@@ -27,8 +27,8 @@ See code for more details about usage.
   <V-IconWrap icon="feather:user" color="secondary" />
   <V-IconWrap icon="feather:x" color="danger" />
   <V-IconWrap icon="feather:code" color="black" />
-  <V-IconWrap picture="/demo/avatars/8.jpg" />
-  <V-IconWrap picture="/demo/avatars/13.jpg" />
+  <V-IconWrap picture="https://vuero.cssninja.io/demo/avatars/8.jpg" />
+  <V-IconWrap picture="https://vuero.cssninja.io/demo/avatars/13.jpg" />
 </div>
 
 <!--/example-->

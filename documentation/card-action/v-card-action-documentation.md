@@ -13,7 +13,7 @@ Check the code example for more details.
 ```vue
 <template>
   <V-CardAction
-    avatar="/demo/avatars/19.jpg"
+    avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
     badge="/images/icons/flags/germany.svg"
     title="Greta K."
     subtitle="Sales Manager"

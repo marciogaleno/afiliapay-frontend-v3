@@ -12,5 +12,5 @@ RUN yarn run build
 FROM bitnami/nginx:1.19 AS prod
 WORKDIR /app
 
-COPY --from=build /app/dist .
+COPY .env .
 COPY ./nginx/vuejs.conf /opt/bitnami/nginx/conf/server_blocks/nginx.conf

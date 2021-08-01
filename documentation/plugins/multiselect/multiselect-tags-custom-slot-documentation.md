@@ -2,25 +2,25 @@
 tagsSlotOptions:
   - value: alice
     name: Alice C.
-    image: /demo/avatars/7.jpg
+    image: https://vuero.cssninja.io/demo/avatars/7.jpg
   - value: erik
     name: Erik K.
-    image: /demo/avatars/8.jpg
+    image: https://vuero.cssninja.io/demo/avatars/8.jpg
   - value: melany
     name: Melany W.
-    image: /demo/avatars/25.jpg
+    image: https://vuero.cssninja.io/demo/avatars/25.jpg
   - value: tara
     name: Tara S.
-    image: /demo/avatars/13.jpg
+    image: https://vuero.cssninja.io/demo/avatars/13.jpg
   - value: mary
     name: Mary L.
-    image: /demo/avatars/5.jpg
+    image: https://vuero.cssninja.io/demo/avatars/5.jpg
   - value: irina
     name: Irina V.
-    image: /demo/avatars/23.jpg
+    image: https://vuero.cssninja.io/demo/avatars/23.jpg
   - value: jonathan
     name: Jonathan K.
-    image: /demo/avatars/32.jpg
+    image: https://vuero.cssninja.io/demo/avatars/32.jpg
 tagsSlotValue: []
 ---
 
@@ -39,37 +39,37 @@ const tagsSlotOptions = [
   {
     value: 'alice',
     name: 'Alice Carasca',
-    image: '/demo/avatars/7.jpg',
+    image: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
   },
   {
     value: 'erik',
     name: 'Erik Kovalsky',
-    image: '/demo/avatars/8.jpg',
+    image: 'https://vuero.cssninja.io/demo/avatars/8.jpg',
   },
   {
     value: 'melany',
     name: 'melany Wallace',
-    image: '/demo/avatars/25.jpg',
+    image: 'https://vuero.cssninja.io/demo/avatars/25.jpg',
   },
   {
     value: 'tara',
     name: 'Tara Svenson',
-    image: '/demo/avatars/13.jpg',
+    image: 'https://vuero.cssninja.io/demo/avatars/13.jpg',
   },
   {
     value: 'mary',
     name: 'Mary Lebowski',
-    image: '/demo/avatars/5.jpg',
+    image: 'https://vuero.cssninja.io/demo/avatars/5.jpg',
   },
   {
     value: 'irina',
     name: 'Irina Vierbovsky',
-    image: '/demo/avatars/23.jpg',
+    image: 'https://vuero.cssninja.io/demo/avatars/23.jpg',
   },
   {
     value: 'jonathan',
     name: 'Jonathan Krugger',
-    image: '/demo/avatars/32.jpg',
+    image: 'https://vuero.cssninja.io/demo/avatars/32.jpg',
   },
 ]
 </script>

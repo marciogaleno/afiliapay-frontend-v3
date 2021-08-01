@@ -15,7 +15,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="current-user">
                   <V-Avatar
                     size="medium"
-                    picture="/demo/avatars/8.jpg"
+                    picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
                     squared
                   />
                   <h3>Welcome back, Erik.</h3>
@@ -30,9 +30,18 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   Praeclarae mortes.
                 </p>
                 <div class="candidates">
-                  <V-Avatar picture="/demo/avatars/13.jpg" squared />
-                  <V-Avatar picture="/demo/avatars/32.jpg" squared />
-                  <V-Avatar picture="/demo/avatars/9.jpg" squared />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
+                    squared
+                  />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/32.jpg"
+                    squared
+                  />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/9.jpg"
+                    squared
+                  />
                   <button>
                     <i
                       aria-hidden="true"
@@ -163,7 +172,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   <div class="grid-item">
                     <UserCardDropdown />
                     <V-Avatar
-                      picture="/demo/avatars/13.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
                       badge="/images/icons/stacks/illustrator.svg"
                       size="large"
                     />
@@ -179,7 +188,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   <div class="grid-item">
                     <UserCardDropdown />
                     <V-Avatar
-                      picture="/demo/avatars/37.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/37.jpg"
                       badge="/images/icons/flags/france.svg"
                       size="large"
                     />
@@ -195,7 +204,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   <div class="grid-item">
                     <UserCardDropdown />
                     <V-Avatar
-                      picture="/demo/avatars/25.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/25.jpg"
                       badge="/images/icons/stacks/js.svg"
                       size="large"
                     />

@@ -121,7 +121,10 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                  <V-Avatar
+                    size="small"
+                    picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user7" />
                   </template>
@@ -137,7 +140,10 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="small" picture="/demo/avatars/13.jpg" />
+                  <V-Avatar
+                    size="small"
+                    picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
@@ -153,7 +159,10 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="small" picture="/demo/avatars/22.jpg" />
+                  <V-Avatar
+                    size="small"
+                    picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user22" />
                   </template>

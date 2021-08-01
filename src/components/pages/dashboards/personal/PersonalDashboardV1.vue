@@ -9,7 +9,10 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
     <!--Personal Dashboard V1-->
     <!--Header-->
     <div class="dashboard-header">
-      <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
+      <V-Avatar
+        picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
+        size="large"
+      />
       <div class="start">
         <h3>Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your personal dashboard.</p>
@@ -136,9 +139,13 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         <div class="column is-4">
           <div class="dashboard-card is-gauge">
             <div class="people">
-              <V-Avatar picture="/demo/avatars/21.jpg" />
+              <V-Avatar
+                picture="https://vuero.cssninja.io/demo/avatars/21.jpg"
+              />
               <V-Avatar initials="SC" color="h-purple" />
-              <V-Avatar picture="/demo/avatars/39.jpg" />
+              <V-Avatar
+                picture="https://vuero.cssninja.io/demo/avatars/39.jpg"
+              />
             </div>
             <apexchart
               :height="teamGaugeOptions.chart.height"

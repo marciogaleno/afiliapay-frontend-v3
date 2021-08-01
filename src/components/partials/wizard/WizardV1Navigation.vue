@@ -121,7 +121,7 @@ const setStep = (target: number) => {
         <div class="profile-avatar">
           <img
             class="avatar"
-            src="/demo/avatars/8.jpg"
+            src="https://vuero.cssninja.io/demo/avatars/8.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'

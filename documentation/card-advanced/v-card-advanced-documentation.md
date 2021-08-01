@@ -15,7 +15,7 @@ using the `radius` prop.
       <V-Block title="Anna B." subtitle="UX Designer" center>
         <template #icon>
           <V-Avatar
-            picture="/demo/avatars/19.jpg"
+            picture="https://vuero.cssninja.io/demo/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
           />
         </template>
@@ -26,25 +26,25 @@ using the `radius` prop.
         :avatars="[
           {
             id: 5,
-            picture: '/demo/avatars/12.jpg',
+            picture: 'https://vuero.cssninja.io/demo/avatars/12.jpg',
             initials: 'JS',
             color: 'info',
           },
           {
             id: 22,
-            picture: '/demo/avatars/22.jpg',
+            picture: 'https://vuero.cssninja.io/demo/avatars/22.jpg',
             initials: 'JH',
             color: 'info',
           },
           {
             id: 40,
-            picture: '/demo/avatars/40.jpg',
+            picture: 'https://vuero.cssninja.io/demo/avatars/40.jpg',
             initials: 'SM',
             color: 'h-purple',
           },
           {
             id: 3,
-            picture: '/demo/avatars/5.jpg',
+            picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg',
             initials: 'ML',
             color: 'danger',
           },

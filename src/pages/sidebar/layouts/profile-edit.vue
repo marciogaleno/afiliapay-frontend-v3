@@ -10,7 +10,7 @@
               <template #icon>
                 <V-Avatar
                   size="large"
-                  picture="/demo/avatars/8.jpg"
+                  picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
                   badge="/images/icons/flags/united-states-of-america.svg"
                 />
               </template>

@@ -136,11 +136,11 @@
                 size="small"
                 :limit="3"
                 :avatars="[
-                  { picture: '/demo/avatars/7.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/7.jpg' },
                   { color: 'info', initials: 'JD' },
-                  { picture: '/demo/avatars/12.jpg' },
-                  { picture: '/demo/avatars/12.jpg' },
-                  { picture: '/demo/avatars/12.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/12.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/12.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/12.jpg' },
                 ]"
               />
             </div>
@@ -195,7 +195,7 @@
                 size="small"
                 :avatars="[
                   { color: 'success', initials: 'BT' },
-                  { picture: '/demo/avatars/8.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg' },
                 ]"
               />
             </div>
@@ -222,7 +222,9 @@
               <V-AvatarStack
                 class="is-pushed-mobile"
                 size="small"
-                :avatars="[{ picture: '/demo/avatars/13.jpg' }]"
+                :avatars="[
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/13.jpg' },
+                ]"
               />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
@@ -249,9 +251,9 @@
                 class="is-pushed-mobile"
                 size="small"
                 :avatars="[
-                  { picture: '/demo/avatars/11.jpg' },
-                  { picture: '/demo/avatars/16.jpg' },
-                  { picture: '/demo/avatars/19.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/11.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/16.jpg' },
+                  { picture: 'https://vuero.cssninja.io/demo/avatars/19.jpg' },
                 ]"
               />
             </div>

@@ -12,7 +12,10 @@ can easily add a `<V-Avatar />` inside your popover.
     <template #content>
       <div class="v-popover-content is-text">
         <div class="popover-head">
-          <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
+          <V-Avatar
+            picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+            size="small"
+          />
           <h4 class="dark-inverted">Alice C.</h4>
         </div>
         <div class="popover-body">
@@ -34,7 +37,7 @@ can easily add a `<V-Avatar />` inside your popover.
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-              <V-Avatar picture="/demo/avatars/7.jpg" size="small"/>
+              <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/7.jpg" size="small"/>
               <h4 class="dark-inverted">Alice C.</h4>
           </div>
           <div class="popover-body">
@@ -48,7 +51,7 @@ can easily add a `<V-Avatar />` inside your popover.
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-              <V-Avatar picture="/demo/avatars/8.jpg" size="small" squared />
+              <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/8.jpg" size="small" squared />
               <h4 class="dark-inverted">Erik K.</h4>
           </div>
           <div class="popover-body">

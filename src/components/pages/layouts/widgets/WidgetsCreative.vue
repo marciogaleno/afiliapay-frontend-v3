@@ -26,7 +26,7 @@ import { products } from '/@src/data/widgets/ui/productList'
 
       <!--Widget-->
       <ContactWidget
-        picture="/demo/avatars/8.jpg"
+        picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
         username="Erik K."
         email="erikkovalsky@vuero.io"
         company="Vuero Ltd."
@@ -107,7 +107,7 @@ import { products } from '/@src/data/widgets/ui/productList'
 
       <!--Widget-->
       <ContactWidget
-        picture="/demo/avatars/8.jpg"
+        picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
         username="Erik K."
         email="erikkovalsky@vuero.io"
         company="Vuero Ltd."
@@ -146,7 +146,7 @@ import { products } from '/@src/data/widgets/ui/productList'
       <!--Widget-->
       <CallWidget
         picture="/@src/assets/illustrations/widgets/6.svg"
-        badge="/demo/avatars/7.jpg"
+        badge="https://vuero.cssninja.io/demo/avatars/7.jpg"
         username="Alice"
       />
 

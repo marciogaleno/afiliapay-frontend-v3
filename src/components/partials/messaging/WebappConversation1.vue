@@ -19,7 +19,7 @@ const emit = defineEmits(['toggleMobileConversation'])
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/demo/avatars/11.jpg"
+          src="https://vuero.cssninja.io/demo/avatars/11.jpg"
           alt=""
           data-user-popover="13"
           @error.once="
@@ -33,7 +33,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/11.jpg"
+            src="https://vuero.cssninja.io/demo/avatars/11.jpg"
             alt=""
             data-user-popover="13"
             @error.once="
@@ -46,7 +46,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           <div class="chat-msg-text">hey Erik, what's up?</div>
           <div class="chat-msg-text">
             <img
-              src="/demo/photos/apps/7.png"
+              src="https://vuero.cssninja.io/demo/photos/apps/7.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -62,7 +62,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/8.jpg"
+            src="https://vuero.cssninja.io/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
             @error.once="
@@ -82,7 +82,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/11.jpg"
+            src="https://vuero.cssninja.io/demo/avatars/11.jpg"
             alt=""
             data-user-popover="13"
             @error.once="
@@ -105,7 +105,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/8.jpg"
+            src="https://vuero.cssninja.io/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
             @error.once="

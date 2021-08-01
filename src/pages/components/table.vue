@@ -223,7 +223,9 @@ useHead({
             <tbody>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/8.gif" />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/8.gif"
+                  />
                 </td>
                 <td>Tina</td>
                 <td>Bergmann</td>
@@ -236,7 +238,9 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/1.gif" />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/1.gif"
+                  />
                 </td>
                 <td>John</td>
                 <td>Wistmus</td>
@@ -249,7 +253,9 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/4.gif" />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/4.gif"
+                  />
                 </td>
                 <td>Sam</td>
                 <td>Watson</td>
@@ -275,7 +281,9 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/3.gif" />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/3.gif"
+                  />
                 </td>
                 <td>Anders</td>
                 <td>Jensen</td>

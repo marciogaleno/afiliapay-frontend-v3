@@ -1,17 +1,17 @@
 export const followersList = [
   {
     id: 0,
-    picture: '/demo/avatars/7.jpg',
+    picture: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
     name: 'Alice',
   },
   {
     id: 1,
-    picture: '/demo/avatars/8.jpg',
+    picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg',
     name: 'Erik',
   },
   {
     id: 2,
-    picture: '/demo/avatars/5.jpg',
+    picture: 'https://vuero.cssninja.io/demo/avatars/5.jpg',
     name: 'Mary',
   },
 ]
