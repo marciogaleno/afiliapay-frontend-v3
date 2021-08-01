@@ -52,6 +52,7 @@ export default defineConfig({
     rollupOptions: {
       external: [/\/demo\/.*/],
     },
+    //teste
   },
   plugins: [
     /**
