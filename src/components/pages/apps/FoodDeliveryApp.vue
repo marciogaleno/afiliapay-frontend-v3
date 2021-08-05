@@ -268,7 +268,7 @@ onUnmounted(() => {
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
               <V-Avatar
-                picture="/demo/photos/food/1.jpg"
+                picture="https://vuero.cssninja.io/demo/photos/food/1.jpg"
                 size="medium"
                 squared
               />
@@ -279,7 +279,7 @@ onUnmounted(() => {
             </div>
             <div class="cart-item">
               <V-Avatar
-                picture="/demo/photos/food/2.jpg"
+                picture="https://vuero.cssninja.io/demo/photos/food/2.jpg"
                 size="medium"
                 squared
               />
@@ -290,7 +290,7 @@ onUnmounted(() => {
             </div>
             <div class="cart-item">
               <V-Avatar
-                picture="/demo/photos/food/3.jpg"
+                picture="https://vuero.cssninja.io/demo/photos/food/3.jpg"
                 size="medium"
                 squared
               />
@@ -350,7 +350,7 @@ onUnmounted(() => {
           </UIWidget>
 
           <ContactWidget
-            picture="/demo/avatars/8.jpg"
+            picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
             username="Erik K."
             email="erikkovalsky@vuero.io"
             company="Vuero Ltd."

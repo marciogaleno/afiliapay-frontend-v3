@@ -49,7 +49,7 @@ export const optionsCompany = {
     data: [
       [
         0,
-        '/demo/avatars/8.jpg',
+        'https://vuero.cssninja.io/demo/avatars/8.jpg',
         'Erik Kovalsky',
         'Product Manager',
         'busy',
@@ -57,7 +57,7 @@ export const optionsCompany = {
       ],
       [
         1,
-        '/demo/avatars/7.jpg',
+        'https://vuero.cssninja.io/demo/avatars/7.jpg',
         'Alice Carasca',
         'Software Engineer',
         'offline',
@@ -65,7 +65,7 @@ export const optionsCompany = {
       ],
       [
         2,
-        '/demo/avatars/13.jpg',
+        'https://vuero.cssninja.io/demo/avatars/13.jpg',
         'Tara Svenson',
         'UI/UX Designer',
         'offline',
@@ -73,7 +73,7 @@ export const optionsCompany = {
       ],
       [
         3,
-        '/demo/avatars/5.jpg',
+        'https://vuero.cssninja.io/demo/avatars/5.jpg',
         'Mary Lebowski',
         'Project Manager',
         'available',
@@ -81,7 +81,7 @@ export const optionsCompany = {
       ],
       [
         5,
-        '/demo/avatars/27.jpg',
+        'https://vuero.cssninja.io/demo/avatars/27.jpg',
         'Carmen Escudero',
         'HR Manager',
         'offline',

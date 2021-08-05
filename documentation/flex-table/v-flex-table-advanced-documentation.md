@@ -14,7 +14,7 @@ const data = [
     id: 0,
     username: 'Erik K.',
     position: 'Product Manager',
-    picture: '/demo/avatars/8.jpg',
+    picture: 'https://vuero.cssninja.io/demo/avatars/8.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Software',
@@ -22,7 +22,7 @@ const data = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://vuero.cssninja.io/demo/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },

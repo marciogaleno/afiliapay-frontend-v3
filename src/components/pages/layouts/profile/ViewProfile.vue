@@ -3,7 +3,7 @@
     <div class="profile-header has-text-centered">
       <V-Avatar
         size="xl"
-        picture="/demo/avatars/8.jpg"
+        picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
         badge="/images/icons/flags/united-states-of-america.svg"
       />
 
@@ -66,7 +66,7 @@
                 <div class="experience-wrapper">
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/airbnb.svg"
+                      src="https://vuero.cssninja.io/demo/photos/brands/airbnb.svg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -85,7 +85,7 @@
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/facebook.svg"
+                      src="https://vuero.cssninja.io/demo/photos/brands/facebook.svg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -104,7 +104,7 @@
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/atlassian.svg"
+                      src="https://vuero.cssninja.io/demo/photos/brands/atlassian.svg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -123,7 +123,7 @@
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/github.svg"
+                      src="https://vuero.cssninja.io/demo/photos/brands/github.svg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -217,9 +217,15 @@
                     </div>
                     <div class="people">
                       <V-Avatar size="small" initials="BT" color="warning" />
-                      <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
+                      />
                       <V-Avatar size="small" initials="JD" color="info" />
-                      <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                      />
                       <V-Avatar size="small" initials="38" />
                     </div>
                   </div>
@@ -233,10 +239,19 @@
                       <span>4 years of experience</span>
                     </div>
                     <div class="people">
-                      <V-Avatar size="small" picture="/demo/avatars/21.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/21.jpg"
+                      />
                       <V-Avatar size="small" initials="AT" color="success" />
-                      <V-Avatar size="small" picture="/demo/avatars/39.jpg" />
-                      <V-Avatar size="small" picture="/demo/avatars/23.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/39.jpg"
+                      />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/23.jpg"
+                      />
                       <V-Avatar size="small" initials="27" />
                     </div>
                   </div>
@@ -250,10 +265,19 @@
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <V-Avatar size="small" picture="/demo/avatars/38.jpg" />
-                      <V-Avatar size="small" picture="/demo/avatars/11.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/38.jpg"
+                      />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/11.jpg"
+                      />
                       <V-Avatar size="small" initials="SC" color="h-purple" />
-                      <V-Avatar size="small" picture="/demo/avatars/13.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
+                      />
                       <V-Avatar size="small" initials="19" />
                     </div>
                   </div>
@@ -267,10 +291,19 @@
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <V-Avatar size="small" picture="/demo/avatars/21.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/21.jpg"
+                      />
                       <V-Avatar size="small" initials="SC" color="h-purple" />
-                      <V-Avatar size="small" picture="/demo/avatars/5.jpg" />
-                      <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/5.jpg"
+                      />
+                      <V-Avatar
+                        size="small"
+                        picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                      />
                       <V-Avatar size="small" initials="31" />
                     </div>
                   </div>
@@ -297,7 +330,7 @@
                   <div class="recommendations-item">
                     <V-Avatar
                       size="large"
-                      picture="/demo/avatars/5.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/5.jpg"
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
                     <h3 class="dark-inverted">Project Manager</h3>
@@ -316,7 +349,7 @@
                   <div class="recommendations-item">
                     <V-Avatar
                       size="large"
-                      picture="/demo/avatars/18.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
 
@@ -389,7 +422,9 @@
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <V-IconWrap picture="/demo/photos/brands/jira.svg" />
+                    <V-IconWrap
+                      picture="https://vuero.cssninja.io/demo/photos/brands/jira.svg"
+                    />
 
                     <div class="meta">
                       <span class="dark-inverted">Jira Software</span>
@@ -399,7 +434,9 @@
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <V-IconWrap picture="/demo/photos/brands/office.svg" />
+                    <V-IconWrap
+                      picture="https://vuero.cssninja.io/demo/photos/brands/office.svg"
+                    />
 
                     <div class="meta">
                       <span class="dark-inverted">MS Office</span>
@@ -423,7 +460,7 @@
                   <!--People-->
                   <a href="#" class="people-item">
                     <V-Avatar
-                      picture="/demo/avatars/25.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/25.jpg"
                       badge="/images/icons/stacks/js.svg"
                     />
 
@@ -436,7 +473,7 @@
                   <!--People-->
                   <a href="#" class="people-item">
                     <V-Avatar
-                      picture="/demo/avatars/29.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/29.jpg"
                       badge="/images/icons/stacks/python.svg"
                     />
 
@@ -449,7 +486,7 @@
                   <!--People-->
                   <a href="#" class="people-item">
                     <V-Avatar
-                      picture="/demo/avatars/38.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/38.jpg"
                       badge="/images/icons/stacks/vuejs.svg"
                     />
 
@@ -462,7 +499,7 @@
                   <!--People-->
                   <a href="#" class="people-item">
                     <V-Avatar
-                      picture="/demo/avatars/28.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/28.jpg"
                       badge="/images/icons/stacks/angular.svg"
                     />
 
@@ -475,7 +512,7 @@
                   <!--People-->
                   <a href="#" class="people-item">
                     <V-Avatar
-                      picture="/demo/avatars/19.jpg"
+                      picture="https://vuero.cssninja.io/demo/avatars/19.jpg"
                       badge="/images/icons/stacks/cplus.svg"
                     />
 

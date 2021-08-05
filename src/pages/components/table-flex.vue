@@ -68,7 +68,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/25.jpg"
+                      src="https://vuero.cssninja.io/demo/avatars/25.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -84,7 +84,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/8.jpg"
+                      src="https://vuero.cssninja.io/demo/avatars/8.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -158,7 +158,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/7.jpg"
+                      src="https://vuero.cssninja.io/demo/avatars/7.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -192,7 +192,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/13.jpg"
+                      src="https://vuero.cssninja.io/demo/avatars/13.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -226,7 +226,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/25.jpg"
+                      src="https://vuero.cssninja.io/demo/avatars/25.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -237,7 +237,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/11.jpg"
+                      src="https://vuero.cssninja.io/demo/avatars/11.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -248,7 +248,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/5.jpg"
+                      src="https://vuero.cssninja.io/demo/avatars/5.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =

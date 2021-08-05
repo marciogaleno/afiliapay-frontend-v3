@@ -1,0 +1,1 @@
+import{_ as a}from"./OnboardingStandard.3cf78115.js";import{d as e,G as o,o as r,e as t,s}from"./vendor.2e4d4237.js";import{p as n}from"./navbarLayoutState.031b7403.js";import"./index.bd34858d.js";const d={class:"page-content-inner"};var i=e({setup:e=>(n.value="Welcome",o({title:"Welcome - Navbar - Vuero"}),(e,o)=>{const n=a;return r(),t("div",d,[s(n)])})});export default i;

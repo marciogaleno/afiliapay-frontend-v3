@@ -31,8 +31,8 @@ const accept = async () => {
         <div class="box-content">
           <V-Avatar
             size="big"
-            picture="/demo/avatars/16.jpg"
-            badge="/demo/photos/apps/9.png"
+            picture="https://vuero.cssninja.io/demo/avatars/16.jpg"
+            badge="https://vuero.cssninja.io/demo/photos/apps/9.png"
           />
 
           <h3 class="dark-inverted">
@@ -53,7 +53,10 @@ const accept = async () => {
           <div class="people-wrap">
             <div class="people">
               <tippy class="has-help-cursor" interactive placement="bottom">
-                <V-Avatar size="small" picture="/demo/avatars/21.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/21.jpg"
+                />
                 <template #content>
                   <UserPopoverContent :user="popovers.user21" />
                 </template>
@@ -67,7 +70,10 @@ const accept = async () => {
               </tippy>
 
               <tippy class="has-help-cursor" interactive placement="bottom">
-                <V-Avatar size="small" picture="/demo/avatars/39.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="https://vuero.cssninja.io/demo/avatars/39.jpg"
+                />
                 <template #content>
                   <UserPopoverContent :user="popovers.user39" />
                 </template>

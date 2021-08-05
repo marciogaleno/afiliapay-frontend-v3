@@ -24,7 +24,7 @@ const activeTab = ref<TabId>('overview')
       <div class="dashboard-header">
         <div class="avatar-container">
           <img
-            src="/demo/photos/faces/girl1.jpg"
+            src="https://vuero.cssninja.io/demo/photos/faces/girl1.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -639,7 +639,7 @@ const activeTab = ref<TabId>('overview')
                 <div class="heatmap-title">
                   <div class="title-avatar">
                     <img
-                      src="/demo/photos/faces/girl1.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/faces/girl1.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1137,7 +1137,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/demo/photos/30.jpg"
+                    src="https://vuero.cssninja.io/demo/photos/30.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
@@ -1149,7 +1149,7 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-group">
                   <a>
                     <img
-                      src="/demo/photos/33.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/33.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1159,7 +1159,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/34.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/34.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1169,7 +1169,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/35.jpeg"
+                      src="https://vuero.cssninja.io/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1179,7 +1179,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/36.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/36.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1210,7 +1210,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/demo/photos/31.png"
+                    src="https://vuero.cssninja.io/demo/photos/31.png"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
@@ -1222,7 +1222,7 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-group">
                   <a>
                     <img
-                      src="/demo/photos/33.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/33.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1232,7 +1232,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/34.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/34.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1242,7 +1242,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/35.jpeg"
+                      src="https://vuero.cssninja.io/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1252,7 +1252,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/36.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/36.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1283,7 +1283,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/demo/photos/32.jpg"
+                    src="https://vuero.cssninja.io/demo/photos/32.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
@@ -1295,7 +1295,7 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-group">
                   <a>
                     <img
-                      src="/demo/photos/33.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/33.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1305,7 +1305,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/34.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/34.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1315,7 +1315,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/35.jpeg"
+                      src="https://vuero.cssninja.io/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1325,7 +1325,7 @@ const activeTab = ref<TabId>('overview')
                   </a>
                   <a>
                     <img
-                      src="/demo/photos/36.jpg"
+                      src="https://vuero.cssninja.io/demo/photos/36.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =

@@ -240,7 +240,9 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         <a href="#" class="dashboard-card is-interview">
           <V-Block title="Jonathan K." subtitle="08:00 - 09:00" center>
             <template #icon>
-              <V-Avatar picture="/demo/avatars/32.jpg" />
+              <V-Avatar
+                picture="https://vuero.cssninja.io/demo/avatars/32.jpg"
+              />
             </template>
             <template #action>
               <i
@@ -254,7 +256,9 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         <a href="#" class="dashboard-card is-interview">
           <V-Block title="Greta K." subtitle="10:30 - 11:00" center>
             <template #icon>
-              <V-Avatar picture="/demo/avatars/19.jpg" />
+              <V-Avatar
+                picture="https://vuero.cssninja.io/demo/avatars/19.jpg"
+              />
             </template>
             <template #action>
               <i
@@ -268,7 +272,9 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         <a href="#" class="dashboard-card is-interview">
           <V-Block title="Joshua S." subtitle="02:30 - 03:00" center>
             <template #icon>
-              <V-Avatar picture="/demo/avatars/12.jpg" />
+              <V-Avatar
+                picture="https://vuero.cssninja.io/demo/avatars/12.jpg"
+              />
             </template>
             <template #action>
               <i

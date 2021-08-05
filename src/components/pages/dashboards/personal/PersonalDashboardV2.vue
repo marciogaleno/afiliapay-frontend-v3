@@ -20,7 +20,7 @@ const democheck = ref(['value_2'])
       <div class="column is-12">
         <div class="dashboard-header">
           <V-Avatar
-            picture="/demo/avatars/8.jpg"
+            picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
             badge="/images/icons/flags/united-states-of-america.svg"
             size="xl"
           />
@@ -60,7 +60,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <V-Avatar
-                  picture="/demo/photos/apps/1.jpg"
+                  picture="https://vuero.cssninja.io/demo/photos/apps/1.jpg"
                   badge="/images/icons/stacks/illustrator.svg"
                   size="medium"
                   squared
@@ -80,7 +80,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <V-Avatar
-                  picture="/demo/photos/apps/2.png"
+                  picture="https://vuero.cssninja.io/demo/photos/apps/2.png"
                   badge="/images/icons/stacks/reactjs.svg"
                   size="medium"
                   squared
@@ -100,7 +100,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <V-Avatar
-                  picture="/demo/photos/apps/3.png"
+                  picture="https://vuero.cssninja.io/demo/photos/apps/3.png"
                   badge="/images/icons/stacks/angular.svg"
                   size="medium"
                   squared
@@ -120,7 +120,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <V-Avatar
-                  picture="/demo/photos/apps/4.png"
+                  picture="https://vuero.cssninja.io/demo/photos/apps/4.png"
                   badge="/images/icons/stacks/js.svg"
                   size="medium"
                   squared
@@ -175,7 +175,9 @@ const democheck = ref(['value_2'])
             <ul class="user-list">
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar picture="/demo/avatars/18.jpg" />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user18" />
                   </template>
@@ -207,7 +209,9 @@ const democheck = ref(['value_2'])
               </li>
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar picture="/demo/avatars/13.jpg" />
+                  <V-Avatar
+                    picture="https://vuero.cssninja.io/demo/avatars/13.jpg"
+                  />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>

@@ -48,7 +48,7 @@ export const optionsUsers = {
     data: [
       [
         0,
-        '/demo/avatars/8.jpg',
+        'https://vuero.cssninja.io/demo/avatars/8.jpg',
         'Erik Kovalsky',
         'Product Manager',
         'busy',
@@ -56,7 +56,7 @@ export const optionsUsers = {
       ],
       [
         1,
-        '/demo/avatars/7.jpg',
+        'https://vuero.cssninja.io/demo/avatars/7.jpg',
         'Alice Carasca',
         'Software Engineer',
         'offline',
@@ -64,7 +64,7 @@ export const optionsUsers = {
       ],
       [
         2,
-        '/demo/avatars/13.jpg',
+        'https://vuero.cssninja.io/demo/avatars/13.jpg',
         'Tara Svenson',
         'UI/UX Designer',
         'offline',
@@ -72,7 +72,7 @@ export const optionsUsers = {
       ],
       [
         3,
-        '/demo/avatars/5.jpg',
+        'https://vuero.cssninja.io/demo/avatars/5.jpg',
         'Mary Lebowski',
         'Project Manager',
         'available',
@@ -88,7 +88,7 @@ export const optionsUsers = {
       ],
       [
         5,
-        '/demo/avatars/27.jpg',
+        'https://vuero.cssninja.io/demo/avatars/27.jpg',
         'Carmen Escudero',
         'HR Manager',
         'offline',
@@ -96,7 +96,7 @@ export const optionsUsers = {
       ],
       [
         6,
-        '/demo/avatars/22.jpg',
+        'https://vuero.cssninja.io/demo/avatars/22.jpg',
         'Dwayne Hicks',
         'Product Manager',
         'offline',
@@ -112,7 +112,7 @@ export const optionsUsers = {
       ],
       [
         8,
-        '/demo/avatars/23.jpg',
+        'https://vuero.cssninja.io/demo/avatars/23.jpg',
         'Irina Vierbovsky',
         'Project Manager',
         'available',
@@ -120,7 +120,7 @@ export const optionsUsers = {
       ],
       [
         9,
-        '/demo/avatars/28.jpg',
+        'https://vuero.cssninja.io/demo/avatars/28.jpg',
         'Edouard Falant',
         'Web Developer',
         'busy',
@@ -144,7 +144,7 @@ export const optionsUsers = {
       ],
       [
         12,
-        '/demo/avatars/39.jpg',
+        'https://vuero.cssninja.io/demo/avatars/39.jpg',
         'Alejandro Badajoz',
         'Web Developer',
         'busy',
@@ -152,7 +152,7 @@ export const optionsUsers = {
       ],
       [
         13,
-        '/demo/avatars/21.jpg',
+        'https://vuero.cssninja.io/demo/avatars/21.jpg',
         'Elizabeth Fisher',
         'Mobile Developer',
         'available',
@@ -160,7 +160,7 @@ export const optionsUsers = {
       ],
       [
         14,
-        '/demo/avatars/37.jpg',
+        'https://vuero.cssninja.io/demo/avatars/37.jpg',
         'Helmut Fritz',
         'Product Manager',
         'available',
@@ -168,7 +168,7 @@ export const optionsUsers = {
       ],
       [
         15,
-        '/demo/avatars/31.jpg',
+        'https://vuero.cssninja.io/demo/avatars/31.jpg',
         'Yasseen Amzi',
         'Business Analyst',
         'offline',

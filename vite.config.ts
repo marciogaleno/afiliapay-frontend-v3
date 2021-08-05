@@ -14,7 +14,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 /**
  * This is the main configuration file for vitejs
- *
+ *  teste
  * @see https://vitejs.dev/config
  */
 export default defineConfig({

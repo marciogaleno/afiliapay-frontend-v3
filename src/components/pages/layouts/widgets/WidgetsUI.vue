@@ -82,7 +82,10 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
       <!--Widget-->
       <UIWidget class="video-widget">
         <template #body>
-          <UIWidgetMovie picture="/demo/photos/widgets/1.jpg" views="38,274" />
+          <UIWidgetMovie
+            picture="https://vuero.cssninja.io/demo/photos/widgets/1.jpg"
+            views="38,274"
+          />
         </template>
       </UIWidget>
 
@@ -235,7 +238,7 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
       <UIWidget class="image-widget">
         <template #body>
           <img
-            src="/demo/photos/widgets/2.jpg"
+            src="https://vuero.cssninja.io/demo/photos/widgets/2.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/400x300'

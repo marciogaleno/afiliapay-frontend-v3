@@ -53,7 +53,7 @@ useHead({
               >
                 <template #image>
                   <V-Avatar
-                    picture="/demo/avatars/22.jpg"
+                    picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
                     badge="/images/icons/flags/united-states-of-america.svg"
                   />
                 </template>

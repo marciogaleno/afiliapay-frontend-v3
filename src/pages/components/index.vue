@@ -18,7 +18,7 @@ useHead({
             <V-Avatar
               size="xl"
               picture="/images/avatars/svg/vuero-2.svg"
-              badge="/demo/photos/misc/buoy.jpg"
+              badge="https://vuero.cssninja.io/demo/photos/misc/buoy.jpg"
             />
 
             <h3 class="title is-4 is-narrow is-thin">Vuero Components</h3>

@@ -35,7 +35,7 @@ const dropdown2 = useDropdown(dropdownElement2)
     <div class="header-area">
       <img
         class="sender-pic"
-        src="/demo/avatars/39.jpg"
+        src="https://vuero.cssninja.io/demo/avatars/39.jpg"
         alt=""
         @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
@@ -209,7 +209,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="reply-bubble">
           <div class="reply-as">
             <img
-              src="/demo/avatars/8.jpg"
+              src="https://vuero.cssninja.io/demo/avatars/8.jpg"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'

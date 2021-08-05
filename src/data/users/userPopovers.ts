@@ -1,7 +1,7 @@
 export const popovers = {
   user5: {
     id: 5,
-    avatar: '/demo/avatars/5.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/5.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Mary L.',
     fullName: 'Mary Lebowski',
@@ -13,7 +13,7 @@ export const popovers = {
   },
   user7: {
     id: 7,
-    avatar: '/demo/avatars/7.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Alice C.',
     fullName: 'Alice Carasca',
@@ -25,7 +25,7 @@ export const popovers = {
   },
   user8: {
     id: 8,
-    avatar: '/demo/avatars/8.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/8.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Erik K.',
     fullName: 'Erik Kovalsky',
@@ -37,7 +37,7 @@ export const popovers = {
   },
   user9: {
     id: 9,
-    avatar: '/demo/avatars/9.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/9.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Anna B.',
     fullName: 'Anna Baker',
@@ -49,7 +49,7 @@ export const popovers = {
   },
   user10: {
     id: 10,
-    avatar: '/demo/avatars/10.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/10.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Henry G.',
     fullName: 'Henry Grobstone',
@@ -61,7 +61,7 @@ export const popovers = {
   },
   user11: {
     id: 11,
-    avatar: '/demo/avatars/11.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/11.jpg',
     badge: '/images/icons/flags/england.svg',
     username: 'Kelly M.',
     fullName: 'Kelly Marston',
@@ -73,7 +73,7 @@ export const popovers = {
   },
   user12: {
     id: 12,
-    avatar: '/demo/avatars/12.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/12.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Joshua S.',
     fullName: 'Joshua Stevens',
@@ -85,7 +85,7 @@ export const popovers = {
   },
   user13: {
     id: 13,
-    avatar: '/demo/avatars/13.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/13.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Tara S.',
     fullName: 'Tara Svenson',
@@ -97,7 +97,7 @@ export const popovers = {
   },
   user14: {
     id: 14,
-    avatar: '/demo/avatars/14.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/14.jpg',
     badge: '/images/icons/flags/england.svg',
     username: 'Ryan B.',
     fullName: 'Ryan Brentman',
@@ -109,7 +109,7 @@ export const popovers = {
   },
   user15: {
     id: 15,
-    avatar: '/demo/avatars/15.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/15.jpg',
     badge: '/images/icons/flags/germany.svg',
     username: 'Hilde V.',
     fullName: 'Hilde Von Strauss',
@@ -121,7 +121,7 @@ export const popovers = {
   },
   user16: {
     id: 16,
-    avatar: '/demo/avatars/16.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/16.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jason G.',
     fullName: 'Jason Guarank',
@@ -133,7 +133,7 @@ export const popovers = {
   },
   user18: {
     id: 18,
-    avatar: '/demo/avatars/18.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/18.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Esteban C.',
     fullName: 'Esteban Castellanos',
@@ -145,7 +145,7 @@ export const popovers = {
   },
   user19: {
     id: 19,
-    avatar: '/demo/avatars/19.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/19.jpg',
     badge: '/images/icons/flags/germany.svg',
     username: 'Greta K.',
     fullName: 'Greta Kroppfer',
@@ -157,7 +157,7 @@ export const popovers = {
   },
   user21: {
     id: 21,
-    avatar: '/demo/avatars/21.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/21.jpg',
     badge: '/images/icons/flags/england.svg',
     username: 'Elisabeth F.',
     fullName: 'Elisabeth Fisher',
@@ -169,7 +169,7 @@ export const popovers = {
   },
   user22: {
     id: 22,
-    avatar: '/demo/avatars/22.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/22.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     fullName: 'Dwayne Hicks',
@@ -181,7 +181,7 @@ export const popovers = {
   },
   user23: {
     id: 23,
-    avatar: '/demo/avatars/23.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/23.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Irina V.',
     fullName: 'Irina Vierbovsky',
@@ -193,7 +193,7 @@ export const popovers = {
   },
   user24: {
     id: 24,
-    avatar: '/demo/avatars/24.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/24.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Sandrine C.',
     fullName: 'Sandrine Coulart',
@@ -205,7 +205,7 @@ export const popovers = {
   },
   user25: {
     id: 25,
-    avatar: '/demo/avatars/25.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/25.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Melany W.',
     fullName: 'Melany Wallace',
@@ -217,7 +217,7 @@ export const popovers = {
   },
   user26: {
     id: 26,
-    avatar: '/demo/avatars/26.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/26.jpg',
     badge: '/images/icons/flags/australia.svg',
     username: 'Courtney W.',
     fullName: 'Courtney Wilson',
@@ -229,7 +229,7 @@ export const popovers = {
   },
   user27: {
     id: 27,
-    avatar: '/demo/avatars/27.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/27.jpg',
     badge: '/images/icons/flags/spain.svg',
     username: 'Carmen E.',
     fullName: 'Carmen Escudero',
@@ -241,7 +241,7 @@ export const popovers = {
   },
   user28: {
     id: 28,
-    avatar: '/demo/avatars/28.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/28.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Edouard F.',
     fullName: 'Edouard Falant',
@@ -253,7 +253,7 @@ export const popovers = {
   },
   user29: {
     id: 29,
-    avatar: '/demo/avatars/29.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/29.jpg',
     badge: '/images/icons/flags/germany.svg',
     username: 'Hakeem C.',
     fullName: 'Hakeem Calami',
@@ -265,7 +265,7 @@ export const popovers = {
   },
   user31: {
     id: 31,
-    avatar: '/demo/avatars/31.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/31.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Yasseen A.',
     fullName: 'Yasseen Amzi',
@@ -277,7 +277,7 @@ export const popovers = {
   },
   user32: {
     id: 32,
-    avatar: '/demo/avatars/32.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/32.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jonathan K.',
     fullName: 'Jonathan Krugger',
@@ -289,7 +289,7 @@ export const popovers = {
   },
   user33: {
     id: 33,
-    avatar: '/demo/avatars/33.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/33.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Harvey M.',
     fullName: 'Harvey Miller',
@@ -301,7 +301,7 @@ export const popovers = {
   },
   user34: {
     id: 34,
-    avatar: '/demo/avatars/34.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/34.jpg',
     badge: '/images/icons/flags/canada.svg',
     username: 'Daniel R.',
     fullName: 'Daniel Redbird',
@@ -313,7 +313,7 @@ export const popovers = {
   },
   user36: {
     id: 36,
-    avatar: '/demo/avatars/36.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/36.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Benoit L.',
     fullName: 'Benoit Leblanc',
@@ -325,7 +325,7 @@ export const popovers = {
   },
   user37: {
     id: 37,
-    avatar: '/demo/avatars/37.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/37.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Helmut F.',
     initials: 'HF',
@@ -337,7 +337,7 @@ export const popovers = {
   },
   user38: {
     id: 38,
-    avatar: '/demo/avatars/38.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/38.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Christie D.',
     fullName: 'Christie Dallas',
@@ -349,7 +349,7 @@ export const popovers = {
   },
   user39: {
     id: 39,
-    avatar: '/demo/avatars/39.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/39.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Alejandro B.',
     fullName: 'Alejandro Badajoz',
@@ -361,7 +361,7 @@ export const popovers = {
   },
   user40: {
     id: 40,
-    avatar: '/demo/avatars/40.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/40.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Jeanne M.',
     fullName: 'Jeanne Marchand',

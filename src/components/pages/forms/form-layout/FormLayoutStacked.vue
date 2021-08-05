@@ -182,7 +182,9 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/demo/avatars/8.jpg" />
+                        <V-Avatar
+                          picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
+                        />
                         <template #content>
                           <UserPopoverContent :user="popovers.user8" />
                         </template>
@@ -204,7 +206,9 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/demo/avatars/18.jpg" />
+                        <V-Avatar
+                          picture="https://vuero.cssninja.io/demo/avatars/18.jpg"
+                        />
                         <template #content>
                           <UserPopoverContent :user="popovers.user18" />
                         </template>
@@ -226,7 +230,9 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/demo/avatars/7.jpg" />
+                        <V-Avatar
+                          picture="https://vuero.cssninja.io/demo/avatars/7.jpg"
+                        />
                         <template #content>
                           <UserPopoverContent :user="popovers.user7" />
                         </template>
@@ -373,27 +379,27 @@ const isStuck = computed(() => {
                         {
                           name: 'Erik K.',
                           value: 'eric',
-                          icon: '/demo/avatars/8.jpg',
+                          icon: 'https://vuero.cssninja.io/demo/avatars/8.jpg',
                         },
                         {
                           name: 'Joshua S.',
                           value: 'joshua',
-                          icon: '/demo/avatars/12.jpg',
+                          icon: 'https://vuero.cssninja.io/demo/avatars/12.jpg',
                         },
                         {
                           name: 'Melany W.',
                           value: 'melany',
-                          icon: '/demo/avatars/25.jpg',
+                          icon: 'https://vuero.cssninja.io/demo/avatars/25.jpg',
                         },
                         {
                           name: 'Alice C.',
                           value: 'alice',
-                          icon: '/demo/avatars/7.jpg',
+                          icon: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
                         },
                         {
                           name: 'Esteban C.',
                           value: 'esteban',
-                          icon: '/demo/avatars/18.jpg',
+                          icon: 'https://vuero.cssninja.io/demo/avatars/18.jpg',
                         },
                       ]"
                     >

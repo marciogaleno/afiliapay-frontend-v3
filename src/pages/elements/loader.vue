@@ -55,7 +55,7 @@ useHead({
           <div class="column is-4">
             <V-Loader size="small" :active="isLoaderActive" grey>
               <V-CardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -71,7 +71,7 @@ useHead({
           <div class="column is-4">
             <V-Loader card="regular" size="small" :active="isLoaderActive">
               <V-CardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -92,7 +92,7 @@ useHead({
               translucent
             >
               <V-CardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -108,7 +108,7 @@ useHead({
           <div class="column is-4">
             <V-Loader card="smooth" :active="isLoaderActive">
               <V-CardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -125,7 +125,7 @@ useHead({
           <div class="column is-4">
             <V-Loader card="rounded" size="large" :active="isLoaderActive">
               <V-CardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -142,7 +142,7 @@ useHead({
           <div class="column is-4">
             <V-Loader card="rounded" size="xl" :active="isLoaderActive">
               <V-CardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"

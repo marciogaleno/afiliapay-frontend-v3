@@ -13,7 +13,7 @@ Check the code example for more details.
   <V-CardSocial
     title="Featured Tweet"
     network="twitter"
-    avatar="/demo/avatars/19.jpg"
+    avatar="https://vuero.cssninja.io/demo/avatars/19.jpg"
     username="@gretak"
     :hashtags="['#bulmaio', '#css', '#responsive']"
     share-label="Retweet"

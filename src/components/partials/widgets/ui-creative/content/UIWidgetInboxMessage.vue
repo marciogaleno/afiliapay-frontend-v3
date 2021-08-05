@@ -13,7 +13,7 @@ const props = defineProps({
   picture: {
     type: String,
     required: true,
-    default: '/demo/avatars/7.jpg',
+    default: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
   },
   time: {
     type: String,

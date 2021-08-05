@@ -6,11 +6,11 @@ COPY yarn.lock ./
 RUN CYPRESS_INSTALL_BINARY=0 yarn install
 
 COPY . .
-RUN yarn run build
+#RUN yarn run build
 
 
 FROM bitnami/nginx:1.19 AS prod
 WORKDIR /app
 
-COPY --from=build /app/dist .
+COPY .env .
 COPY ./nginx/vuejs.conf /opt/bitnami/nginx/conf/server_blocks/nginx.conf

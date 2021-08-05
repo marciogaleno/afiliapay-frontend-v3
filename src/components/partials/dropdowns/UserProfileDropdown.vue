@@ -6,13 +6,16 @@
         aria-haspopup="true"
         @click="toggle"
       >
-        <V-Avatar picture="/demo/avatars/8.jpg" />
+        <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/8.jpg" />
       </a>
     </template>
 
     <template #content>
       <div class="dropdown-head">
-        <V-Avatar size="large" picture="/demo/avatars/8.jpg" />
+        <V-Avatar
+          size="large"
+          picture="https://vuero.cssninja.io/demo/avatars/8.jpg"
+        />
 
         <div class="meta">
           <span>Erik Kovalsky</span>

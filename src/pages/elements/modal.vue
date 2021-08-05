@@ -195,7 +195,7 @@ useHead({
         >
           <template #image>
             <V-Avatar
-              picture="/demo/avatars/22.jpg"
+              picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -220,7 +220,7 @@ useHead({
         >
           <template #image>
             <V-Avatar
-              picture="/demo/avatars/22.jpg"
+              picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -246,7 +246,7 @@ useHead({
         >
           <template #image>
             <V-Avatar
-              picture="/demo/avatars/22.jpg"
+              picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -272,7 +272,7 @@ useHead({
         >
           <template #image>
             <V-Avatar
-              picture="/demo/avatars/22.jpg"
+              picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -298,7 +298,7 @@ useHead({
         >
           <template #image>
             <V-Avatar
-              picture="/demo/avatars/22.jpg"
+              picture="https://vuero.cssninja.io/demo/avatars/22.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -493,7 +493,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/22.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -513,7 +513,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/8.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/8.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -533,7 +533,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/7.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -553,7 +553,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/25.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -573,7 +573,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/12.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -737,7 +737,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/22.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -757,7 +757,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/8.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/8.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -777,7 +777,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/7.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -797,7 +797,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/25.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -817,7 +817,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/12.jpg"
+                                src="https://vuero.cssninja.io/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =

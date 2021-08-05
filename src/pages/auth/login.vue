@@ -27,7 +27,7 @@ const handleLogin = async () => {
       router.push(redirect)
     } else {
       router.push({
-        name: 'dashboards',
+        name: 'dashboards'
       })
     }
 
@@ -36,7 +36,7 @@ const handleLogin = async () => {
 }
 
 useHead({
-  title: 'Auth Login 3 - Vuero',
+  title: 'Auth Login 3 - Vuero'
 })
 </script>
 

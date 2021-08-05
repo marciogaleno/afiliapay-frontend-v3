@@ -16,31 +16,31 @@ const conversations = [
     id: 1,
     name: 'Henry G.',
     lastMessage: '3 minutes ago',
-    avatar: '/demo/avatars/10.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/10.jpg',
   },
   {
     id: 2,
     name: 'Melany W.',
     lastMessage: '30 minutes ago',
-    avatar: '/demo/avatars/25.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/25.jpg',
   },
   {
     id: 3,
     name: 'Tara S.',
     lastMessage: '1 day ago',
-    avatar: '/demo/avatars/13.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/13.jpg',
   },
   {
     id: 4,
     name: 'Esteban C.',
     lastMessage: '1 day ago',
-    avatar: '/demo/avatars/18.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/18.jpg',
   },
   {
     id: 5,
     name: 'Alice C.',
     lastMessage: '2 days ago',
-    avatar: '/demo/avatars/7.jpg',
+    avatar: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
   },
 ]
 
@@ -456,7 +456,7 @@ watchPostEffect(() => {
                       </div>
                       <div class="detail-photo-grid">
                         <img
-                          src="/demo/photos/demo-apps/1.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/1.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -464,7 +464,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/2.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/2.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -472,7 +472,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/3.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/3.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -480,7 +480,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/4.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/4.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -488,7 +488,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/5.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/5.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -496,7 +496,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/6.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/6.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -504,7 +504,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/7.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/7.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -512,7 +512,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/8.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/8.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -520,7 +520,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/9.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/9.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -528,7 +528,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/10.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/10.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -536,7 +536,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/11.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/11.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =
@@ -544,7 +544,7 @@ watchPostEffect(() => {
                           "
                         />
                         <img
-                          src="/demo/photos/demo-apps/12.jpg"
+                          src="https://vuero.cssninja.io/demo/photos/demo-apps/12.jpg"
                           alt=""
                           @error.once="
                             $event.target.src =

@@ -11,7 +11,7 @@ Use the `<V-AvatarStack />` component. The component takes 2 props:
 const users = [
   {
     id: 0,
-    picture: '/demo/avatars/7.jpg',
+    picture: 'https://vuero.cssninja.io/demo/avatars/7.jpg',
     initials: 'AC',
     color: 'info',
   },
@@ -34,12 +34,12 @@ const users = [
 
 <!--example-->
 <div class="avatar-stack">
-    <V-Avatar picture="/demo/avatars/7.jpg" size="medium" />
+    <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/7.jpg" size="medium" />
     <V-Avatar initials="JO" color="info" size="medium" />
-    <V-Avatar picture="/demo/avatars/8.jpg" size="medium" />
-    <V-Avatar picture="/demo/avatars/5.jpg" size="medium" />
+    <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/8.jpg" size="medium" />
+    <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/5.jpg" size="medium" />
     <V-Avatar initials="CP" color="success" size="medium" />
-    <V-Avatar picture="/demo/avatars/5.jpg" size="medium" />
+    <V-Avatar picture="https://vuero.cssninja.io/demo/avatars/5.jpg" size="medium" />
     <div class="v-avatar is-medium">
         <span class="avatar is-more">
             <span class="inner">
