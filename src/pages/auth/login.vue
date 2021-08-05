@@ -27,7 +27,7 @@ const handleLogin = async () => {
       router.push(redirect)
     } else {
       router.push({
-        name: 'app',
+        name: 'dashboards',
       })
     }
 
@@ -73,7 +73,7 @@ useHead({
         <div class="auth-head">
           <h2>Welcome Back.</h2>
           <p>Please sign in to your account</p>
-          <RouterLink :to="{ name: 'auth-signup-3' }">
+          <RouterLink :to="{ name: 'auth-signup' }">
             I do not have an account yet
           </RouterLink>
         </div>
