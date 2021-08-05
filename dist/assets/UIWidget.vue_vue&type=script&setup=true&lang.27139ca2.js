@@ -1,1 +1,0 @@
-import{d as s,o as t,e as a,E as e,n as o}from"./vendor.2e4d4237.js";var r=s({props:{straight:{type:Boolean,default:!1}},setup(s){const r=s;return(s,d)=>(t(),a("div",{class:o(["widget",[r.straight&&"is-straight"]])},[e(s.$slots,"header"),e(s.$slots,"body")],2))}});export{r as _};
