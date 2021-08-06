@@ -134,13 +134,13 @@ watchEffect(() => {
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink :to="{ name: 'auth-login-1' }" class="nav-link">
+          <RouterLink :to="{ name: 'auth-login' }" class="nav-link">
             Login
           </RouterLink>
         </div>
         <div class="navbar-item">
           <V-Button
-            :to="{ name: 'auth-signup-1' }"
+            :to="{ name: 'auth-signup' }"
             color="primary"
             rounded
             raised
