@@ -1,0 +1,1 @@
+import{d as a,o as r,a as s,r as e,n as t}from"./vendor.2d2522c6.js";var o=a({props:{theme:{type:String,default:"darker"}},setup(a){const o=a;return(a,p)=>(r(),s("div",{class:t(["minimal-wrapper",[o.theme]])},[e(a.$slots,"default")],2))}});export{o as _};
