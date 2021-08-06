@@ -1,19 +1,5 @@
 [
   {
-    "name": "Messaging V1",
-    "category": "APP",
-    "displayOrder": 210,
-    "new": false,
-    "route": {
-      "name": "messaging-v1",
-      "path": "/messaging-v1"
-    },
-    "screenshot": {
-      "light": "/images/screenshots/sidebar/messaging-v1-light.webp",
-      "dark": "/images/screenshots/sidebar/messaging-v1-dark.webp"
-    }
-  },
-  {
     "name": "Maps V1",
     "category": "APP",
     "displayOrder": 211,
@@ -417,20 +403,6 @@
     "screenshot": {
       "light": "/images/screenshots/sidebar/list-flex-v3-light.webp",
       "dark": "/images/screenshots/sidebar/list-flex-v3-dark.webp"
-    }
-  },
-  {
-    "name": "Homepage (List View V1)",
-    "category": "LAYOUTS",
-    "displayOrder": 250,
-    "new": false,
-    "route": {
-      "name": "sidebar-layouts",
-      "path": "/sidebar/layouts/"
-    },
-    "screenshot": {
-      "light": "/images/screenshots/sidebar/homepage-list-view-v1--light.webp",
-      "dark": "/images/screenshots/sidebar/homepage-list-view-v1--dark.webp"
     }
   },
   {

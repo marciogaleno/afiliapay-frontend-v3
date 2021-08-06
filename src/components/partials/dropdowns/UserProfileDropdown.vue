@@ -70,16 +70,18 @@
       <hr class="dropdown-divider" />
 
       <div class="dropdown-item is-button">
-        <V-Button
-          class="logout-button"
-          icon="feather:log-out"
-          color="primary"
-          role="menuitem"
-          raised
-          fullwidth
-        >
-          Logout
-        </V-Button>
+        <RouterLink :to="{ name: 'auth-login' }">
+          <V-Button
+            class="logout-button"
+            icon="feather:log-out"
+            color="primary"
+            role="menuitem"
+            raised
+            fullwidth
+          >
+            Logout
+          </V-Button>
+        </RouterLink>
       </div>
     </template>
   </V-Dropdown>

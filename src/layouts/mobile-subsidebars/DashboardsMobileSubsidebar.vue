@@ -301,12 +301,6 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink :to="{ name: 'messaging-v1' }" class="is-submenu">
-                <i aria-hidden="true" class="lnil lnil-bubble"></i>
-                <span>Messaging V1</span>
-              </RouterLink>
-            </li>
-            <li>
               <RouterLink :to="{ name: 'messaging-v2' }" class="is-submenu">
                 <i aria-hidden="true" class="lnil lnil-bubble"></i>
                 <span>Messaging V2</span>

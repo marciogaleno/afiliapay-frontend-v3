@@ -304,17 +304,6 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'messaging-v1' }">
-                      <i aria-hidden="true" class="lnil lnil-bubble"></i>
-                      <span>Messaging V1</span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:circle"
-                      ></i>
-                    </RouterLink>
-                  </li>
-                  <li>
                     <RouterLink :to="{ name: 'messaging-v2' }">
                       <i aria-hidden="true" class="lnil lnil-bubble"></i>
                       <span>Messaging V2</span>

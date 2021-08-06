@@ -69,15 +69,6 @@ const isDesktopSidebarOpen = ref(false)
             <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </RouterLink>
         </li>
-        <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:message-circle"
-            ></i>
-          </RouterLink>
-        </li>
       </template>
 
       <template #bottom-links>
@@ -149,15 +140,6 @@ const isDesktopSidebarOpen = ref(false)
         </li>
 
         <!-- Messaging -->
-        <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:message-circle"
-            ></i>
-          </RouterLink>
-        </li>
       </template>
 
       <template #bottom-links>

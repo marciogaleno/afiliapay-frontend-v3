@@ -19,12 +19,6 @@
           </div>
           <ul>
             <li>
-              <RouterLink :to="{ name: 'sidebar-layouts' }" class="is-submenu">
-                <i aria-hidden="true" class="lnil lnil-list-alt"></i>
-                <span>List View V1</span>
-              </RouterLink>
-            </li>
-            <li>
               <RouterLink
                 :to="{ name: 'sidebar-layouts-list-view-2' }"
                 class="is-submenu"
@@ -426,15 +420,6 @@
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-profile-notifications' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-notification"></i>
-                <span>Notifications</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
                 :to="{ name: 'sidebar-layouts-profile-settings' }"
                 class="is-submenu"
               >
@@ -469,7 +454,7 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink :to="{ name: 'auth-login-3' }" class="is-submenu">
+              <RouterLink :to="{ name: 'auth-login' }" class="is-submenu">
                 <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                 <span>Login v3</span>
               </RouterLink>
@@ -481,7 +466,7 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink :to="{ name: 'auth-signup-3' }" class="is-submenu">
+              <RouterLink :to="{ name: 'auth-signup' }" class="is-submenu">
                 <i aria-hidden="true" class="lnil lnil-crown"></i>
                 <span>Signup v2</span>
               </RouterLink>

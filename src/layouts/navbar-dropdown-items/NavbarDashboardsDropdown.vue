@@ -399,17 +399,6 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'messaging-v1' }"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-bubble"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Messaging V1</span>
-                  </div>
-                </RouterLink>
-                <RouterLink
                   :to="{ name: 'messaging-v2' }"
                   class="dropdown-item is-media"
                 >
