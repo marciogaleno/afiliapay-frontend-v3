@@ -538,7 +538,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'auth-login-3' }"
+                  :to="{ name: 'auth-login' }"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -560,7 +560,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'auth-signup-3' }"
+                  :to="{ name: 'auth-signup' }"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">

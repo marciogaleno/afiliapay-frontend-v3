@@ -482,7 +482,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'auth-login-3' }">
+                    <RouterLink :to="{ name: 'auth-login' }">
                       <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                       <span>Login v3</span>
                       <i
@@ -504,7 +504,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'auth-signup-3' }">
+                    <RouterLink :to="{ name: 'auth-signup' }">
                       <i aria-hidden="true" class="lnil lnil-crown"></i>
                       <span>Signup v2</span>
                       <i

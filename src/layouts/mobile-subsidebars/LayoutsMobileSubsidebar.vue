@@ -469,7 +469,7 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink :to="{ name: 'auth-login-3' }" class="is-submenu">
+              <RouterLink :to="{ name: 'auth-login' }" class="is-submenu">
                 <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                 <span>Login v3</span>
               </RouterLink>
@@ -481,7 +481,7 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink :to="{ name: 'auth-signup-3' }" class="is-submenu">
+              <RouterLink :to="{ name: 'auth-signup' }" class="is-submenu">
                 <i aria-hidden="true" class="lnil lnil-crown"></i>
                 <span>Signup v2</span>
               </RouterLink>
