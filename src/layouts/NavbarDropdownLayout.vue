@@ -110,15 +110,6 @@ watch(
             <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </a>
         </li>
-        <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:message-circle"
-            ></i>
-          </RouterLink>
-        </li>
       </template>
 
       <template #bottom-links>

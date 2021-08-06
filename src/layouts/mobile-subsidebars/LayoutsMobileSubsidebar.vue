@@ -19,12 +19,6 @@
           </div>
           <ul>
             <li>
-              <RouterLink :to="{ name: 'sidebar-layouts' }" class="is-submenu">
-                <i aria-hidden="true" class="lnil lnil-list-alt"></i>
-                <span>List View V1</span>
-              </RouterLink>
-            </li>
-            <li>
               <RouterLink
                 :to="{ name: 'sidebar-layouts-list-view-2' }"
                 class="is-submenu"
@@ -422,15 +416,6 @@
               >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 <span>Edit Profile</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'sidebar-layouts-profile-notifications' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-notification"></i>
-                <span>Notifications</span>
               </RouterLink>
             </li>
             <li>

@@ -70,14 +70,6 @@ const localFlagSrc = computed(() => {
               <div class="heading-left">
                 <h6 class="heading-title">Notifications</h6>
               </div>
-              <div class="heading-right">
-                <RouterLink
-                  class="notification-link"
-                  :to="{ name: 'sidebar-layouts-profile-notifications' }"
-                >
-                  See all
-                </RouterLink>
-              </div>
             </div>
             <ul class="notification-list">
               <li>

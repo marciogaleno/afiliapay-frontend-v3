@@ -441,15 +441,6 @@ const emit = defineEmits(['close'])
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-profile-notifications' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-notification"></i>
-                <span>Notifications</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
                 :to="{ name: 'sidebar-layouts-profile-settings' }"
                 class="is-submenu"
               >

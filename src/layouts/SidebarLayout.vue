@@ -142,15 +142,6 @@ watch(
             <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </a>
         </li>
-        <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:message-circle"
-            ></i>
-          </RouterLink>
-        </li>
       </template>
 
       <template #bottom-links>
@@ -200,36 +191,6 @@ watch(
 
     <Sidebar :theme="props.theme" :is-open="isDesktopSidebarOpen">
       <template #links>
-        <!-- Dashboards -->
-        <li>
-          <a
-            :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
-            data-content="Dashboards"
-            @click="switchSidebar('dashboard')"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:activity"
-            ></i>
-          </a>
-        </li>
-
-        <!-- Layouts -->
-        <li>
-          <a
-            :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
-            data-content="Layouts"
-            @click="switchSidebar('layout')"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:grid"
-            ></i>
-          </a>
-        </li>
-
         <!-- Elements -->
         <li>
           <a
@@ -259,21 +220,6 @@ watch(
             ></i>
           </a>
         </li>
-
-        <!-- Messaging -->
-        <li>
-          <RouterLink
-            id="open-messages"
-            :to="{ name: 'messaging-v1' }"
-            data-content="Messaging"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:message-circle"
-            ></i>
-          </RouterLink>
-        </li>
       </template>
 
       <template #bottom-links>
@@ -298,21 +244,6 @@ watch(
               data-icon="feather-x"
             />
           </a>
-        </li>
-
-        <!-- Settings -->
-        <li>
-          <RouterLink
-            id="open-settings"
-            :to="{ name: 'sidebar-layouts-profile-settings' }"
-            data-content="Settings"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:settings"
-            ></i>
-          </RouterLink>
         </li>
 
         <!-- Profile Dropdown -->
