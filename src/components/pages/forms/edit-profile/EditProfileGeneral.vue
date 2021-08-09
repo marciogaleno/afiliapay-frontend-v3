@@ -3,6 +3,7 @@ import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
+import { Form, Field } from 'vee-validate'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -16,6 +17,15 @@ const skillsOptions = [
   { value: 'saas', label: 'SaaS' },
   { value: 'engineering', label: 'Engineering' },
 ]
+const schema = {
+  name: 'required',
+  password: 'required|min:8',
+}
+
+const user = ref({
+  name: '',
+  typePerson: '',
+})
 
 const notyf = useNotyf()
 const { y } = useWindowScroll()
@@ -133,83 +143,103 @@ const onSave = async () => {
           </template>
         </V-Avatar>
       </div>
-
       <!--Fieldset-->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Personal Info</h4>
           <p>Others diserve to know you more</p>
         </div>
-
-        <div class="columns is-multiline">
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="feather:user">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="First Name"
-                  autocomplete="given-name"
-                />
-              </V-Control>
-            </V-Field>
+        <Form v-slot="{ errors }" :validation-schema="schema" @submit="submit">
+          <div class="columns is-multiline">
+            <!--Field-->
+            <div class="column is-12">
+              <V-Field>
+                <V-Control>
+                  <Multiselect
+                    v-model="user.typePerson"
+                    placeholder="Selecione o tipo"
+                    :options="{
+                      PF: 'Pessoa Fisica',
+                      PJ: 'Pessoa Juridica',
+                    }"
+                  />
+                </V-Control>
+              </V-Field>
+            </div>
+            <div v-if="user.typePerson == 'PF'" class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:user"
+                  :has-error="errors.name"
+                  :is-valid="!errors.name"
+                >
+                  <Field
+                    name="name"
+                    type="text"
+                    class="input"
+                    placeholder="Name"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.name }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control icon="feather:user">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Last Name"
+                    autocomplete="family-name"
+                  />
+                </V-Control>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-12">
+              <V-Field>
+                <V-Control icon="feather:briefcase">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Job Title"
+                    autocomplete="organization-title"
+                  />
+                </V-Control>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-12">
+              <V-Field>
+                <V-Control icon="feather:map-pin">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Location"
+                    autocomplete="country-name"
+                  />
+                </V-Control>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-12">
+              <V-Field>
+                <V-Control>
+                  <textarea
+                    class="textarea"
+                    rows="4"
+                    placeholder="About / Bio"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="true"
+                  ></textarea>
+                </V-Control>
+              </V-Field>
+            </div>
           </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="feather:user">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Last Name"
-                  autocomplete="family-name"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:briefcase">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Job Title"
-                  autocomplete="organization-title"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:map-pin">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Location"
-                  autocomplete="country-name"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control>
-                <textarea
-                  class="textarea"
-                  rows="4"
-                  placeholder="About / Bio"
-                  autocomplete="off"
-                  autocapitalize="off"
-                  spellcheck="true"
-                ></textarea>
-              </V-Control>
-            </V-Field>
-          </div>
-        </div>
+        </Form>
       </div>
 
       <!--Fieldset-->

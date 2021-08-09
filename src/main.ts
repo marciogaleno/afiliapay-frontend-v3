@@ -23,6 +23,12 @@ import hasNestedRouterLink from './directives/has-nested-router-link'
 import background from './directives/background'
 import tooltip from './directives/tooltip'
 
+import { defineRule } from 'vee-validate'
+import AllRules from '@vee-validate/rules'
+
+Object.keys(AllRules).forEach((rule) => {
+  defineRule(rule, AllRules[rule])
+})
 /**
  * Importing external libraries allow to compile them in our bundle
  * How files are interpreted is defined by ther extension.
