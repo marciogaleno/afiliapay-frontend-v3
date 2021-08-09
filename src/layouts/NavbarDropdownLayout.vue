@@ -164,7 +164,7 @@ watch(
         <div class="separator"></div>
 
         <ProjectsQuickDropdown />
-        <h1 class="title is-5">{{ pageTitle }}</h1>
+        <h1 class="title is-5">Dashboard</h1>
       </template>
 
       <!-- Custom navbar toolbar -->
@@ -199,7 +199,10 @@ watch(
           <div class="centered-drop">
             <NavbarComponentsDropdown />
           </div>
-          <div class="centered-button centered-link-search">
+          <div class="centered-drop">
+            <NavbarFerramentasDropdown />
+          </div>
+          <!--<div class="centered-button centered-link-search">
             <button class="button" @click="displaySearch = true">
               <span class="icon is-small">
                 <i
@@ -209,7 +212,7 @@ watch(
                 ></i>
               </span>
             </button>
-          </div>
+          </div>-->
         </div>
         <div class="centered-search" :class="[!displaySearch && 'is-hidden']">
           <div class="field">

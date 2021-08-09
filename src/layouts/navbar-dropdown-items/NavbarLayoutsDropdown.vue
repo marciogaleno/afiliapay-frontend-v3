@@ -28,7 +28,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           rounded
           @click="toggle"
         >
-          Layouts
+          Produtos
         </V-Button>
       </div>
     </template>
@@ -515,7 +515,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'auth-login-1' }"
                   class="dropdown-item is-media"
                 >
@@ -525,8 +525,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Login v1</span>
                   </div>
-                </RouterLink>
-                <RouterLink
+                </RouterLink>-->
+                <!--<RouterLink
                   :to="{ name: 'auth-login-2' }"
                   class="dropdown-item is-media"
                 >
@@ -536,7 +536,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Login v2</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
                 <RouterLink
                   :to="{ name: 'auth-login' }"
                   class="dropdown-item is-media"
@@ -548,7 +548,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Login v3</span>
                   </div>
                 </RouterLink>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'auth-signup-2' }"
                   class="dropdown-item is-media"
                 >
@@ -558,7 +558,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Signup v1</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
                 <RouterLink
                   :to="{ name: 'auth-signup' }"
                   class="dropdown-item is-media"
@@ -570,7 +570,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Signup v2</span>
                   </div>
                 </RouterLink>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'auth-signup-1' }"
                   class="dropdown-item is-media"
                 >
@@ -580,7 +580,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Signup Flow</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
                 <RouterLink
                   :to="{ name: 'navbar-layouts-search-results' }"
                   class="dropdown-item is-media"
@@ -900,7 +900,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'error-page-1' }"
+                  :to="{ name: 'error' }"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -910,7 +910,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V1</span>
                   </div>
                 </RouterLink>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'error-page-2' }"
                   class="dropdown-item is-media"
                 >
@@ -953,7 +953,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Error Page V5</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
               </div>
             </div>
           </div>

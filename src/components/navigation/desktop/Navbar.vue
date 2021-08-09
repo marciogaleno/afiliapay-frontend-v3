@@ -77,7 +77,7 @@ const isScrolling = computed(() => {
         </slot>
       </div>
       <div class="right">
-        <!-- Toolbar slot -->
+        <!--Toolbar slot -->
         <slot name="toolbar"></slot>
       </div>
     </div>

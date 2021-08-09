@@ -36,7 +36,7 @@ const onSave = async () => {
         <div class="right">
           <div class="buttons">
             <V-Button
-              :to="{ name: 'sidebar-layouts-profile-view' }"
+              :to="{ name: 'index' }"
               icon="lnir lnir-arrow-left rem-100"
               light
               dark-outlined

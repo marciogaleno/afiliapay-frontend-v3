@@ -28,7 +28,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           rounded
           @click="toggle"
         >
-          Elements
+          Vendas
         </V-Button>
       </div>
     </template>

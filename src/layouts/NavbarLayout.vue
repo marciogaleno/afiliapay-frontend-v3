@@ -92,7 +92,7 @@ watch(
       <template #links>
         <li>
           <a
-            :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
+            :class="[activeMobileSubsidebar === 'home' && 'is-active']"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
             <i

@@ -23,41 +23,41 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
               <div class="account-menu">
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-edit' }"
+                  :to="{ name: 'profile-edit' }"
                   class="account-menu-item"
                 >
                   <i aria-hidden="true" class="lnil lnil-user-alt"></i>
-                  <span>General</span>
+                  <span>Dados cadastrais</span>
                   <span class="end">
                     <i aria-hidden="true" class="fas fa-arrow-right"></i>
                   </span>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-edit-experience' }"
+                  :to="{ name: 'profile-edit-experience' }"
                   class="account-menu-item"
                 >
                   <i aria-hidden="true" class="lnil lnil-crown-alt"></i>
-                  <span>Experience</span>
+                  <span>Documentos</span>
                   <span class="end">
                     <i aria-hidden="true" class="fas fa-arrow-right"></i>
                   </span>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-edit-skills' }"
+                  :to="{ name: 'profile-edit-skills' }"
                   class="account-menu-item"
                 >
                   <i aria-hidden="true" class="lnil lnil-quill"></i>
-                  <span>Skills</span>
+                  <span>Dados Finaceiros</span>
                   <span class="end">
                     <i aria-hidden="true" class="fas fa-arrow-right"></i>
                   </span>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-edit-settings' }"
+                  :to="{ name: 'profile-edit-settings' }"
                   class="account-menu-item"
                 >
                   <i aria-hidden="true" class="lnil lnil-cog"></i>
-                  <span>Settings</span>
+                  <span>Opções Extras</span>
                   <span class="end">
                     <i aria-hidden="true" class="fas fa-arrow-right"></i>
                   </span>
@@ -79,7 +79,7 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/pages/profile/_user-profile.scss';
+@import '../scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_mixins.scss';
+@import '../scss/pages/profile/_user-profile.scss';
 </style>

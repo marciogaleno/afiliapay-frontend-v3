@@ -34,7 +34,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           rounded
           @click="toggle"
         >
-          Relatórios
+          Ferramentas
         </V-Button>
       </div>
     </template>

@@ -28,7 +28,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           rounded
           @click="toggle"
         >
-          Dashboards
+          Inicio
         </V-Button>
       </div>
     </template>
@@ -387,7 +387,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     />
                   </div>
                 </RouterLink>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'inbox' }"
                   class="dropdown-item is-media"
                 >
@@ -397,8 +397,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Inbox</span>
                   </div>
-                </RouterLink>
-                <RouterLink
+                </RouterLink>-->
+                <!--<RouterLink
                   :to="{ name: 'messaging-v2' }"
                   class="dropdown-item is-media"
                 >
@@ -408,7 +408,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Messaging V2</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
               </div>
             </div>
           </div>
@@ -432,7 +432,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar="">
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'sidebar-blank-page-1' }"
                   class="dropdown-item is-media"
                 >
@@ -442,8 +442,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Regular Sidebar</span>
                   </div>
-                </RouterLink>
-                <RouterLink
+                </RouterLink>-->
+                <!--<RouterLink
                   :to="{ name: 'sidebar-blank-page-2' }"
                   class="dropdown-item is-media"
                 >
@@ -453,8 +453,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Curved Sidebar</span>
                   </div>
-                </RouterLink>
-                <RouterLink
+                </RouterLink>-->
+                <!--<RouterLink
                   :to="{ name: 'sidebar-blank-page-3' }"
                   class="dropdown-item is-media"
                 >
@@ -508,9 +508,9 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Float Sidebar</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
                 <hr class="dropdown-divider" />
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'navbar-blank-page-1' }"
                   class="dropdown-item is-media"
                 >
@@ -597,7 +597,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Clean Fade</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
               </div>
             </div>
           </div>
@@ -698,7 +698,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content">
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'wizard-v1' }"
                   class="dropdown-item is-media"
                 >
@@ -708,7 +708,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Wizard V1</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
                 <RouterLink
                   :to="{ name: 'navbar-layouts-form-layouts-1' }"
                   class="dropdown-item is-media"

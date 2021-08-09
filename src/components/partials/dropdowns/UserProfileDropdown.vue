@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <a href="#" role="menuitem" class="dropdown-item is-media">
+      <a href="/profile-edit" role="menuitem" class="dropdown-item is-media">
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-user-alt"></i>
         </div>

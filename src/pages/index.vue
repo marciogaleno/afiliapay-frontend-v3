@@ -6,6 +6,7 @@ requiresAuth: true
 import { useHead } from '@vueuse/head'
 
 import { pageTitle } from '/@src/state/sidebarLayoutState'
+import SidebarLayout from '/@src/layouts/SidebarLayout.vue'
 
 pageTitle.value = 'Sales Dashboard'
 useHead({
@@ -14,9 +15,9 @@ useHead({
 </script>
 
 <template>
-  <sidebar-layout>
+  <NavbarDropdownLayout>
     <div class="page-content-inner">
       <SalesDashboard />
     </div>
-  </sidebar-layout>
+  </NavbarDropdownLayout>
 </template>
