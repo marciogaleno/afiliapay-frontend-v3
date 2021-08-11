@@ -4,6 +4,7 @@ import { computed, ref } from 'vue'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 import { Form, Field } from 'vee-validate'
+import { required } from '@vee-validate/rules'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -18,13 +19,51 @@ const skillsOptions = [
   { value: 'engineering', label: 'Engineering' },
 ]
 const schema = {
-  name: 'required',
+  name: 'required|max:55',
   password: 'required|min:8',
+  last_name: 'required|max:20',
+  cpf: 'required|max:11|min:11',
+  email: 'required|max:100|min:10',
+  whatsapp: 'required|max:11|min:11',
+  razão: 'required',
+  cnpj: 'required|max:14|min:14',
+  email_afiliapay: 'required|min:10',
+  email_communique: 'required|min:10',
+  phone: 'required|max:11',
+  facebook: 'required|min:10',
+  instagram: 'required|min:10',
+  cep: 'required|min:8',
+  Endereço: 'required',
+  numberAdress: 'required|max:10',
+  complement: 'required',
+  district: 'required',
+  city: 'required',
+  state: 'required',
+  country: 'required',
 }
 
 const user = ref({
   name: '',
+  cpf: '',
+  last_name: '',
   typePerson: '',
+  email: '',
+  whatsapp: '',
+  razão: '',
+  cnpj: '',
+  email_afiliapay: '',
+  email_communique: '',
+  phone: '',
+  facebook: '',
+  instagram: '',
+  cep: '',
+  Endereço: '',
+  numberAdress: '',
+  complement: '',
+  district: '',
+  city: '',
+  state: '',
+  country: '',
 })
 
 const notyf = useNotyf()
@@ -63,8 +102,8 @@ const onSave = async () => {
     <div class="form-head stuck-header" :class="[isScrolling && 'is-stuck']">
       <div class="form-head-inner">
         <div class="left">
-          <h3>General Info</h3>
-          <p>Edit your account's general information</p>
+          <h3>Informações gerais</h3>
+          <p>Edite as informações gerais da sua conta</p>
         </div>
         <div class="right">
           <div class="buttons">
@@ -74,7 +113,7 @@ const onSave = async () => {
               light
               dark-outlined
             >
-              Go Back
+              Volte
             </V-Button>
             <V-Button
               color="primary"
@@ -82,7 +121,7 @@ const onSave = async () => {
               :loading="isLoading"
               @click="onSave"
             >
-              Save Changes
+              Salvar alterações
             </V-Button>
           </div>
         </div>
@@ -92,8 +131,8 @@ const onSave = async () => {
       <!--Fieldset-->
       <div class="fieldset">
         <div class="fieldset-heading">
-          <h4>Profile Picture</h4>
-          <p>This is how others will recognize you</p>
+          <h4>Foto do perfil</h4>
+          <p>É assim que os outros irão reconhecê-lo</p>
         </div>
 
         <V-Avatar size="xl" class="profile-v-avatar">
@@ -146,13 +185,13 @@ const onSave = async () => {
       <!--Fieldset-->
       <div class="fieldset">
         <div class="fieldset-heading">
-          <h4>Personal Info</h4>
-          <p>Others diserve to know you more</p>
+          <h4>Dados Pessoais:</h4>
+          <p>Outros não merecem te conhecer mais</p>
         </div>
         <Form v-slot="{ errors }" :validation-schema="schema" @submit="submit">
           <div class="columns is-multiline">
             <!--Field-->
-            <div class="column is-12">
+            <div class="column is-6">
               <V-Field>
                 <V-Control>
                   <Multiselect
@@ -166,6 +205,26 @@ const onSave = async () => {
                 </V-Control>
               </V-Field>
             </div>
+            <!--pessoa fisica-->
+            <div v-if="user.typePerson == 'PF'" class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:file-text"
+                  :has-error="errors.cpf"
+                  :is-valid="!errors.cpf"
+                >
+                  <Field
+                    name="cpf"
+                    type="number"
+                    class="input"
+                    placeholder="CPF"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.cpf }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
             <div v-if="user.typePerson == 'PF'" class="column is-6">
               <V-Field>
                 <V-Control
@@ -185,57 +244,248 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
+            <div v-if="user.typePerson == 'PF'" class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:user"
+                  :has-error="errors.last_name"
+                  :is-valid="!errors.name"
+                >
+                  <Field
+                    name="last_name"
+                    type="text"
+                    class="input"
+                    placeholder="Last name"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.last_name }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div v-if="user.typePerson == 'PF'" class="column is-12">
+              <V-Field>
+                <V-Control
+                  icon="feather:mail"
+                  :has-error="errors.email"
+                  :is-valid="!errors.email"
+                >
+                  <Field
+                    name="email"
+                    type="email"
+                    class="input"
+                    placeholder="E-mail"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.email }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div v-if="user.typePerson == 'PF'" class="column is-12">
+              <V-Field>
+                <V-Control
+                  icon="feather:message-circle"
+                  :has-error="errors.whatsapp"
+                  :is-valid="!errors.whatsapp"
+                >
+                  <Field
+                    name="whatsapp"
+                    type="number"
+                    class="input"
+                    placeholder="Whatsapp"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.whatsapp }}</span>
+              </V-Field>
+            </div>
+            <!--pessoa juridica-->
+            <div v-if="user.typePerson == 'PJ'" class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:file-text"
+                  :has-error="errors.cnpj"
+                  :is-valid="!errors.cnpj"
+                >
+                  <Field
+                    name="cnpj"
+                    type="number"
+                    class="input"
+                    placeholder="CNPJ"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.cnpj }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div v-if="user.typePerson == 'PJ'" class="column is-12">
+              <V-Field>
+                <V-Control
+                  icon="feather:briefcase"
+                  :has-error="errors.razão"
+                  :is-valid="!errors.razão"
+                >
+                  <Field
+                    name="razão"
+                    type="text"
+                    class="input"
+                    placeholder="Razão sozial"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.razão }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div v-if="user.typePerson == 'PJ'" class="column is-12">
+              <V-Field>
+                <V-Control
+                  icon="feather:mail"
+                  :has-error="errors.email"
+                  :is-valid="!errors.email"
+                >
+                  <Field
+                    name="email"
+                    type="email"
+                    class="input"
+                    placeholder="E-mail"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.email }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div v-if="user.typePerson == 'PJ'" class="column is-12">
+              <V-Field>
+                <V-Control
+                  icon="feather:message-circle"
+                  :has-error="errors.whatsapp"
+                  :is-valid="!errors.whatsapp"
+                >
+                  <Field
+                    name="whatsapp"
+                    type="number"
+                    class="input"
+                    placeholder="Whatsapp"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.whatsapp }}</span>
+              </V-Field>
+            </div>
+          </div>
+        </Form>
+      </div>
+      <!--Fieldset-->
+      <div class="fieldset">
+        <div class="fieldset-heading">
+          <h4>Dados de Contato:</h4>
+          <p>
+            Isso pode ajudar outras pessoas a encontrar você nas redes sociais
+          </p>
+        </div>
+        <Form v-slot="{ errors }" :validation-schema="schema" @submit="submit">
+          <div class="columns is-multiline">
+            <!--Field-->
+            <div class="column is-12">
+              <V-Field>
+                <V-Control
+                  icon="feather:mail"
+                  :has-error="errors.email_afiliapay"
+                  :is-valid="!errors.email_afiliapay"
+                >
+                  <Field
+                    name="email_afiliapay"
+                    type="email"
+                    class="input"
+                    placeholder="E-mail de acesso a AfiliaPay"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{
+                  errors.email_afiliapay
+                }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-12">
+              <V-Field>
+                <V-Control
+                  icon="feather:mail"
+                  :has-error="errors.email_communique"
+                  :is-valid="!errors.email_communique"
+                >
+                  <Field
+                    name="email_communique"
+                    type="email"
+                    class="input"
+                    placeholder="E-mail para comunicados da AfiliaPay"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{
+                  errors.email_communique
+                }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control icon="feather:user">
-                  <input
-                    type="text"
+                <V-Control
+                  icon="feather:phone"
+                  :has-error="errors.phone"
+                  :is-valid="!errors.phone"
+                >
+                  <Field
+                    name="phone"
+                    type="number"
                     class="input"
-                    placeholder="Last Name"
-                    autocomplete="family-name"
+                    placeholder="Telefone profissional"
+                    autocomplete="given-name"
                   />
                 </V-Control>
+                <span class="help text-danger">{{ errors.phone }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:facebook"
+                  :has-error="errors.facebook"
+                  :is-valid="!errors.facebook"
+                >
+                  <Field
+                    name="facebook"
+                    type="text"
+                    class="input"
+                    placeholder="Link do facebook"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.facebook }}</span>
               </V-Field>
             </div>
             <!--Field-->
             <div class="column is-12">
               <V-Field>
-                <V-Control icon="feather:briefcase">
-                  <input
+                <V-Control
+                  icon="feather:instagram"
+                  :has-error="errors.instagram"
+                  :is-valid="!errors.instagram"
+                >
+                  <Field
+                    name="instagram"
                     type="text"
                     class="input"
-                    placeholder="Job Title"
-                    autocomplete="organization-title"
+                    placeholder="Link do instagram"
+                    autocomplete="given-name"
                   />
                 </V-Control>
-              </V-Field>
-            </div>
-            <!--Field-->
-            <div class="column is-12">
-              <V-Field>
-                <V-Control icon="feather:map-pin">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Location"
-                    autocomplete="country-name"
-                  />
-                </V-Control>
-              </V-Field>
-            </div>
-            <!--Field-->
-            <div class="column is-12">
-              <V-Field>
-                <V-Control>
-                  <textarea
-                    class="textarea"
-                    rows="4"
-                    placeholder="About / Bio"
-                    autocomplete="off"
-                    autocapitalize="off"
-                    spellcheck="true"
-                  ></textarea>
-                </V-Control>
+                <span class="help text-danger">{{ errors.instagram }}</span>
               </V-Field>
             </div>
           </div>
@@ -245,167 +495,167 @@ const onSave = async () => {
       <!--Fieldset-->
       <div class="fieldset">
         <div class="fieldset-heading">
-          <h4>Professional Info</h4>
-          <p>This can help you to win some opportunities</p>
+          <h4>Endereço:</h4>
+          <p>
+            Isso pode ajudar outras pessoas a encontrar você nas redes sociais
+          </p>
         </div>
-        <div class="columns is-multiline">
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control>
-                <Multiselect
-                  v-model="experience"
-                  placeholder="Experience"
-                  :options="[
-                    '0-2 years',
-                    '2-5 years',
-                    '5-10 years',
-                    '10+ years',
-                  ]"
-                />
-              </V-Control>
-            </V-Field>
+        <Form v-slot="{ errors }" :validation-schema="schema" @submit="submit">
+          <div class="columns is-multiline">
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:map-pin"
+                  :has-error="errors.cep"
+                  :is-valid="!errors.cep"
+                >
+                  <Field
+                    name="cep"
+                    type="number"
+                    class="input"
+                    placeholder="CEP"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.cep }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:map"
+                  :has-error="errors.Endereço"
+                  :is-valid="!errors.Endereço"
+                >
+                  <Field
+                    name="Endereço"
+                    type="text"
+                    class="input"
+                    placeholder="Endereço"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.Endereço }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:edit-3"
+                  :has-error="errors.numberAdress"
+                  :is-valid="!errors.numberAdress"
+                >
+                  <Field
+                    name="numberAdress"
+                    type="number"
+                    class="input"
+                    placeholder="Numero"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.numberAdress }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:file-text"
+                  :has-error="errors.complement"
+                  :is-valid="!errors.complement"
+                >
+                  <Field
+                    name="complement"
+                    type="text"
+                    class="input"
+                    placeholder="complemento"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.complement }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:home"
+                  :has-error="errors.district"
+                  :is-valid="!errors.district"
+                >
+                  <Field
+                    name="district"
+                    type="text"
+                    class="input"
+                    placeholder="Bairro"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.district }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:flag"
+                  :has-error="errors.city"
+                  :is-valid="!errors.city"
+                >
+                  <Field
+                    name="city"
+                    type="text"
+                    class="input"
+                    placeholder="Cidade"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.city }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:map"
+                  :has-error="errors.state"
+                  :is-valid="!errors.state"
+                >
+                  <Field
+                    name="state"
+                    type="text"
+                    class="input"
+                    placeholder="Estado"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.state }}</span>
+              </V-Field>
+            </div>
+            <!--Field-->
+            <div class="column is-6">
+              <V-Field>
+                <V-Control
+                  icon="feather:map"
+                  :has-error="errors.country"
+                  :is-valid="!errors.country"
+                >
+                  <Field
+                    name="country"
+                    type="text"
+                    class="input"
+                    placeholder="país"
+                    autocomplete="given-name"
+                  />
+                </V-Control>
+                <span class="help text-danger">{{ errors.country }}</span>
+              </V-Field>
+            </div>
           </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control>
-                <Multiselect
-                  v-model="firstJob"
-                  placeholder="Is this your first job?"
-                  :options="['Yes', 'No']"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control>
-                <Multiselect
-                  v-model="flexibility"
-                  placeholder="Are you flexible?"
-                  :options="['Yes', 'No']"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control>
-                <Multiselect
-                  v-model="remote"
-                  placeholder="Do you work remotely?"
-                  :options="['Yes', 'No']"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control>
-                <Multiselect
-                  v-model="skills"
-                  mode="tags"
-                  :searchable="true"
-                  :create-tag="true"
-                  :options="skillsOptions"
-                  placeholder="Add tags"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-        </div>
-      </div>
-
-      <!--Fieldset-->
-      <div class="fieldset">
-        <div class="fieldset-heading">
-          <h4>Social Profiles</h4>
-          <p>This can help others finding you on social media</p>
-        </div>
-        <div class="columns is-multiline">
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-facebook-f">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Facebook URL"
-                  inputmode="url"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-twitter">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Twitter URL"
-                  inputmode="url"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-dribbble">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Dribbble URL"
-                  inputmode="url"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-instagram">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Instagram URL"
-                  inputmode="url"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-github">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Github URL"
-                  inputmode="url"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-gitlab">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Gitlab URL"
-                  inputmode="url"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-        </div>
+        </Form>
       </div>
     </div>
   </div>

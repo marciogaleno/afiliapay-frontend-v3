@@ -4,6 +4,8 @@ import { computed, ref } from 'vue'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
+const options = ref(['Option 2'])
+
 const notyf = useNotyf()
 const { y } = useWindowScroll()
 
@@ -41,7 +43,7 @@ const onSave = async () => {
               light
               dark-outlined
             >
-              Go Back
+              Volte
             </V-Button>
             <V-Button
               color="primary"
@@ -49,7 +51,7 @@ const onSave = async () => {
               :loading="isLoading"
               @click="onSave"
             >
-              Save Changes
+              Salvar alterações
             </V-Button>
           </div>
         </div>
@@ -59,149 +61,51 @@ const onSave = async () => {
       <!--Fieldset-->
       <div class="fieldset">
         <div class="fieldset-heading">
-          <h4>Change Password</h4>
+          <h4>Selecione as opções abaixo</h4>
           <p>For an improved account security</p>
         </div>
 
         <div class="columns is-multiline">
           <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:unlock">
-                <input
-                  type="password"
-                  class="input"
-                  placeholder="Old Password"
-                  autocomplete="current-password"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:lock">
-                <input
-                  type="password"
-                  class="input"
-                  placeholder="New Password"
-                  autocomplete="new-password"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:lock">
-                <input
-                  type="password"
-                  class="input"
-                  placeholder="Repeat New Password"
-                  autocomplete="new-password"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-        </div>
-      </div>
-
-      <!--Fieldset-->
-      <div class="fieldset">
-        <div class="fieldset-heading">
-          <h4>2 Factor Auth</h4>
-          <p>Enable or disable 2 factor auth</p>
-        </div>
-
-        <div class="columns is-multiline">
-          <!--Field-->
-          <div class="column is-12">
+          <div>
             <V-Field>
               <V-Control>
-                <V-SwitchBlock
-                  v-model="twoFactor"
-                  label="Enable / disable 2 factor"
+                <V-Checkbox
+                  v-model="options"
+                  value="Receber e-mails de boletos impressos"
+                  label="Receber e-mails de boletos impressos"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
-          </div>
-          <!--Field-->
-          <div v-if="twoFactor" class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:smartphone">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Phone Number"
-                  autocomplete="tel"
-                  inputmode="tel"
-                />
-              </V-Control>
-            </V-Field>
-          </div>
-        </div>
-      </div>
-
-      <!--Fieldset-->
-      <div class="fieldset">
-        <div class="fieldset-heading">
-          <h4>Notifications</h4>
-          <p>Configure how you receive notifications</p>
-        </div>
-
-        <div class="columns is-multiline">
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
-                  v-model="notifications"
-                  label="Disable all notifications"
+                <V-Checkbox
+                  v-model="options"
+                  value="Receber e-mails de venda realizadas"
+                  label="Receber e-mails de venda realizadas"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
-
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
-                  v-model="notificationsLow"
-                  label="Disable low priority notifications"
+                <V-Checkbox
+                  v-model="options"
+                  value="Receber e-mails de pedidos de reembolso e chargebacks"
+                  label="Receber e-mails de pedidos de reembolso e chargebacks"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
-          </div>
-        </div>
-      </div>
-
-      <!--Fieldset-->
-      <div class="fieldset">
-        <div class="fieldset-heading">
-          <h4>Marketing</h4>
-          <p>Configure how you receive promotions</p>
-        </div>
-
-        <div class="columns is-multiline">
-          <!--Field-->
-          <div class="column is-12">
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
-                  v-model="marketing"
-                  label="Enable marketing emails"
+                <!--<V-Checkbox
+                  v-model="options"
+                  value="Option 4"
+                  label="Option 4"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
-                  v-model="partners"
-                  label="Enable partners emails"
+                <V-Checkbox
+                  v-model="options"
+                  value="Option 5"
+                  label="Option 5"
                   color="primary"
                 />
+                <V-Checkbox
+                  v-model="options"
+                  value="Option 6"
+                  label="Option 6"
+                  color="primary"
+                />-->
               </V-Control>
             </V-Field>
           </div>
