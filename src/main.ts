@@ -23,8 +23,24 @@ import hasNestedRouterLink from './directives/has-nested-router-link'
 import background from './directives/background'
 import tooltip from './directives/tooltip'
 
-import { defineRule } from 'vee-validate'
+import { localize } from '@vee-validate/i18n'
+import { defineRule, configure } from 'vee-validate'
 import AllRules from '@vee-validate/rules'
+
+configure({
+  // Generates an Portugues message locale generator
+  generateMessage: localize('pt_BR', {
+    messages: {
+      email: 'O campo deve ser um email válido',
+      image: 'O campo deve ser uma imagem',
+      integer: 'O campo deve ser um número inteiro',
+      max: 'O campo não deve ter mais que 0:{length} caracteres',
+      min: 'O campo deve conter pelo menos 0:{length} caracteres',
+      numeric: 'O campo deve conter apenas números',
+      required: 'O campo é obrigatório',
+    },
+  }),
+})
 
 Object.keys(AllRules).forEach((rule) => {
   defineRule(rule, AllRules[rule])

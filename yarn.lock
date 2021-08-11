@@ -1932,6 +1932,11 @@
     "@typescript-eslint/types" "4.28.3"
     eslint-visitor-keys "^2.0.0"
 
+"@vee-validate/i18n@^4.4.7":
+  version "4.4.7"
+  resolved "https://registry.npmjs.org/@vee-validate/i18n/-/i18n-4.4.7.tgz"
+  integrity sha512-byFffBFnQQPFMVEy2ExYOq4LsXyRm45XHRhuWZy1TAwkpkBgGyt8RZt+8h1dNR+GbGElQHGSls+oLjk6D1GMBg==
+
 "@vee-validate/rules@^4.4.7":
   version "4.4.7"
   resolved "https://registry.npmjs.org/@vee-validate/rules/-/rules-4.4.7.tgz"

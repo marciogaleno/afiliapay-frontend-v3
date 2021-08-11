@@ -52,8 +52,8 @@ const onSave = async () => {
     <div class="form-head stuck-header" :class="[isScrolling && 'is-stuck']">
       <div class="form-head-inner">
         <div class="left">
-          <h3>Work Experience</h3>
-          <p>Edit your work experience info</p>
+          <h3>Documentos</h3>
+          <p>Faça o upload dos seus arquivos</p>
         </div>
         <div class="right">
           <div class="buttons">

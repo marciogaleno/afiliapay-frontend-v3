@@ -32,8 +32,7 @@ const onSave = async () => {
     <div class="form-head stuck-header" :class="[isScrolling && 'is-stuck']">
       <div class="form-head-inner">
         <div class="left">
-          <h3>Settings</h3>
-          <p>Edit your account prefs and settings</p>
+          <h3>Opções Extras</h3>
         </div>
         <div class="right">
           <div class="buttons">
@@ -62,7 +61,6 @@ const onSave = async () => {
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Selecione as opções abaixo</h4>
-          <p>For an improved account security</p>
         </div>
 
         <div class="columns is-multiline">

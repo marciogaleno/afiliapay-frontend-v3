@@ -46,7 +46,7 @@ const user = ref({
   name: '',
   cpf: '',
   last_name: '',
-  typePerson: '',
+  typePerson: 'PF',
   email: '',
   whatsapp: '',
   razão: '',
@@ -186,7 +186,6 @@ const onSave = async () => {
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Dados Pessoais:</h4>
-          <p>Outros não merecem te conhecer mais</p>
         </div>
         <Form v-slot="{ errors }" :validation-schema="schema" @submit="submit">
           <div class="columns is-multiline">
@@ -206,13 +205,9 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--pessoa fisica-->
-            <div v-if="user.typePerson == 'PF'" class="column is-6">
+            <div v-show="user.typePerson == 'PF'" class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:file-text"
-                  :has-error="errors.cpf"
-                  :is-valid="!errors.cpf"
-                >
+                <V-Control icon="feather:file-text" :has-error="errors.cpf">
                   <Field
                     name="cpf"
                     type="number"
@@ -225,13 +220,9 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
-            <div v-if="user.typePerson == 'PF'" class="column is-6">
+            <div v-show="user.typePerson == 'PF'" class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:user"
-                  :has-error="errors.name"
-                  :is-valid="!errors.name"
-                >
+                <V-Control icon="feather:user" :has-error="errors.name">
                   <Field
                     name="name"
                     type="text"
@@ -244,13 +235,9 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
-            <div v-if="user.typePerson == 'PF'" class="column is-6">
+            <div v-show="user.typePerson == 'PF'" class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:user"
-                  :has-error="errors.last_name"
-                  :is-valid="!errors.name"
-                >
+                <V-Control icon="feather:user" :has-error="errors.last_name">
                   <Field
                     name="last_name"
                     type="text"
@@ -263,13 +250,9 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
-            <div v-if="user.typePerson == 'PF'" class="column is-12">
+            <div v-show="user.typePerson == 'PF'" class="column is-12">
               <V-Field>
-                <V-Control
-                  icon="feather:mail"
-                  :has-error="errors.email"
-                  :is-valid="!errors.email"
-                >
+                <V-Control icon="feather:mail" :has-error="errors.email">
                   <Field
                     name="email"
                     type="email"
@@ -282,12 +265,11 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
-            <div v-if="user.typePerson == 'PF'" class="column is-12">
+            <div v-show="user.typePerson == 'PF'" class="column is-12">
               <V-Field>
                 <V-Control
                   icon="feather:message-circle"
                   :has-error="errors.whatsapp"
-                  :is-valid="!errors.whatsapp"
                 >
                   <Field
                     name="whatsapp"
@@ -301,13 +283,9 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--pessoa juridica-->
-            <div v-if="user.typePerson == 'PJ'" class="column is-6">
+            <div v-show="user.typePerson == 'PJ'" class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:file-text"
-                  :has-error="errors.cnpj"
-                  :is-valid="!errors.cnpj"
-                >
+                <V-Control icon="feather:file-text" :has-error="errors.cnpj">
                   <Field
                     name="cnpj"
                     type="number"
@@ -320,13 +298,9 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
-            <div v-if="user.typePerson == 'PJ'" class="column is-12">
+            <div v-show="user.typePerson == 'PJ'" class="column is-12">
               <V-Field>
-                <V-Control
-                  icon="feather:briefcase"
-                  :has-error="errors.razão"
-                  :is-valid="!errors.razão"
-                >
+                <V-Control icon="feather:briefcase" :has-error="errors.razão">
                   <Field
                     name="razão"
                     type="text"
@@ -339,13 +313,9 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
-            <div v-if="user.typePerson == 'PJ'" class="column is-12">
+            <div v-show="user.typePerson == 'PJ'" class="column is-12">
               <V-Field>
-                <V-Control
-                  icon="feather:mail"
-                  :has-error="errors.email"
-                  :is-valid="!errors.email"
-                >
+                <V-Control icon="feather:mail" :has-error="errors.email">
                   <Field
                     name="email"
                     type="email"
@@ -358,12 +328,11 @@ const onSave = async () => {
               </V-Field>
             </div>
             <!--Field-->
-            <div v-if="user.typePerson == 'PJ'" class="column is-12">
+            <div v-show="user.typePerson == 'PJ'" class="column is-12">
               <V-Field>
                 <V-Control
                   icon="feather:message-circle"
                   :has-error="errors.whatsapp"
-                  :is-valid="!errors.whatsapp"
                 >
                   <Field
                     name="whatsapp"
@@ -395,7 +364,6 @@ const onSave = async () => {
                 <V-Control
                   icon="feather:mail"
                   :has-error="errors.email_afiliapay"
-                  :is-valid="!errors.email_afiliapay"
                 >
                   <Field
                     name="email_afiliapay"
@@ -416,7 +384,6 @@ const onSave = async () => {
                 <V-Control
                   icon="feather:mail"
                   :has-error="errors.email_communique"
-                  :is-valid="!errors.email_communique"
                 >
                   <Field
                     name="email_communique"
@@ -434,11 +401,7 @@ const onSave = async () => {
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:phone"
-                  :has-error="errors.phone"
-                  :is-valid="!errors.phone"
-                >
+                <V-Control icon="feather:phone" :has-error="errors.phone">
                   <Field
                     name="phone"
                     type="number"
@@ -453,11 +416,7 @@ const onSave = async () => {
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:facebook"
-                  :has-error="errors.facebook"
-                  :is-valid="!errors.facebook"
-                >
+                <V-Control icon="feather:facebook" :has-error="errors.facebook">
                   <Field
                     name="facebook"
                     type="text"
@@ -475,7 +434,6 @@ const onSave = async () => {
                 <V-Control
                   icon="feather:instagram"
                   :has-error="errors.instagram"
-                  :is-valid="!errors.instagram"
                 >
                   <Field
                     name="instagram"
@@ -496,20 +454,13 @@ const onSave = async () => {
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Endereço:</h4>
-          <p>
-            Isso pode ajudar outras pessoas a encontrar você nas redes sociais
-          </p>
         </div>
         <Form v-slot="{ errors }" :validation-schema="schema" @submit="submit">
           <div class="columns is-multiline">
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:map-pin"
-                  :has-error="errors.cep"
-                  :is-valid="!errors.cep"
-                >
+                <V-Control icon="feather:map-pin" :has-error="errors.cep">
                   <Field
                     name="cep"
                     type="number"
@@ -524,11 +475,7 @@ const onSave = async () => {
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:map"
-                  :has-error="errors.Endereço"
-                  :is-valid="!errors.Endereço"
-                >
+                <V-Control icon="feather:map" :has-error="errors.Endereço">
                   <Field
                     name="Endereço"
                     type="text"
@@ -546,7 +493,6 @@ const onSave = async () => {
                 <V-Control
                   icon="feather:edit-3"
                   :has-error="errors.numberAdress"
-                  :is-valid="!errors.numberAdress"
                 >
                   <Field
                     name="numberAdress"
@@ -565,7 +511,6 @@ const onSave = async () => {
                 <V-Control
                   icon="feather:file-text"
                   :has-error="errors.complement"
-                  :is-valid="!errors.complement"
                 >
                   <Field
                     name="complement"
@@ -581,11 +526,7 @@ const onSave = async () => {
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:home"
-                  :has-error="errors.district"
-                  :is-valid="!errors.district"
-                >
+                <V-Control icon="feather:home" :has-error="errors.district">
                   <Field
                     name="district"
                     type="text"
@@ -600,11 +541,7 @@ const onSave = async () => {
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:flag"
-                  :has-error="errors.city"
-                  :is-valid="!errors.city"
-                >
+                <V-Control icon="feather:flag" :has-error="errors.city">
                   <Field
                     name="city"
                     type="text"
@@ -619,11 +556,7 @@ const onSave = async () => {
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:map"
-                  :has-error="errors.state"
-                  :is-valid="!errors.state"
-                >
+                <V-Control icon="feather:map" :has-error="errors.state">
                   <Field
                     name="state"
                     type="text"
@@ -638,11 +571,7 @@ const onSave = async () => {
             <!--Field-->
             <div class="column is-6">
               <V-Field>
-                <V-Control
-                  icon="feather:map"
-                  :has-error="errors.country"
-                  :is-valid="!errors.country"
-                >
+                <V-Control icon="feather:map" :has-error="errors.country">
                   <Field
                     name="country"
                     type="text"
