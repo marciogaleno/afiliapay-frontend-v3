@@ -3,6 +3,7 @@ import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
+import user from '/@src/components/pages/forms/edit-profile/EditProfileGeneral.vue'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -88,7 +89,7 @@ const onSave = async () => {
           <a class="action-link" @click="isUploading = false">Cancel</a>
         </div>
         <!--CNH-->
-        <div class="fieldset">
+        <div v-if="user.typePerson == 'PF'" class="fieldset">
           <V-Field grouped>
             <V-CardMedia>
               <div v-if="!isUploading" class="fieldset-heading">
@@ -97,7 +98,7 @@ const onSave = async () => {
               <V-Control>
                 <div class="file has-name">
                   <label class="file-label">
-                    <input class="file-input" type="file" name="resume" />
+                    <input class="file-input" type="file" name="ImageCnh" />
                     <span class="file-cta">
                       <span class="file-icon">
                         <i class="fas fa-cloud-upload-alt"></i>
@@ -114,7 +115,7 @@ const onSave = async () => {
           </V-Field>
         </div>
         <!--residencia-->
-        <div class="fieldset">
+        <div v-if="user.typePerson == 'PF'" class="fieldset">
           <V-Field grouped>
             <V-CardMedia>
               <div v-if="!isUploading" class="fieldset-heading">
@@ -123,7 +124,93 @@ const onSave = async () => {
               <V-Control>
                 <div class="file has-name">
                   <label class="file-label">
-                    <V-FilePond class="file-input" type="file" name="resume" />
+                    <V-FilePond
+                      class="file-input"
+                      type="file"
+                      name="ImageReceipt"
+                    />
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                      </span>
+                      <span class="file-label"> Choose a file… </span>
+                    </span>
+                    <span class="file-name light-text">
+                      22082020_project_budget.xls
+                    </span>
+                  </label>
+                </div>
+              </V-Control>
+            </V-CardMedia>
+          </V-Field>
+        </div>
+        <!--ttt-->
+        <div v-if="user.typePerson == 'PJ'" class="fieldset">
+          <V-Field grouped>
+            <V-CardMedia>
+              <div v-if="!isUploading" class="fieldset-heading">
+                <h4>Foto do CNPJ</h4>
+              </div>
+              <V-Control>
+                <div class="file has-name">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="ImageCnpj" />
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                      </span>
+                      <span class="file-label"> Choose a file… </span>
+                    </span>
+                    <span class="file-name light-text">
+                      22082020_project_budget.xls
+                    </span>
+                  </label>
+                </div>
+              </V-Control>
+            </V-CardMedia>
+          </V-Field>
+        </div>
+        <!--res-->
+        <div v-if="user.typePerson == 'PJ'" class="fieldset">
+          <V-Field grouped>
+            <V-CardMedia>
+              <div v-if="!isUploading" class="fieldset-heading">
+                <h4>Foto do contrato social</h4>
+              </div>
+              <V-Control>
+                <div class="file has-name">
+                  <label class="file-label">
+                    <input
+                      class="file-input"
+                      type="file"
+                      name="ImageContract"
+                    />
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                      </span>
+                      <span class="file-label"> Choose a file… </span>
+                    </span>
+                    <span class="file-name light-text">
+                      22082020_project_budget.xls
+                    </span>
+                  </label>
+                </div>
+              </V-Control>
+            </V-CardMedia>
+          </V-Field>
+        </div>
+        <!--compo-->
+        <div v-if="user.typePerson == 'PJ'" class="fieldset">
+          <V-Field grouped>
+            <V-CardMedia>
+              <div v-if="!isUploading" class="fieldset-heading">
+                <h4>Foto do comprovante de residencia</h4>
+              </div>
+              <V-Control>
+                <div class="file has-name">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="ImageReceipt" />
                     <span class="file-cta">
                       <span class="file-icon">
                         <i class="fas fa-cloud-upload-alt"></i>

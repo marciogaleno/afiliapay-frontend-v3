@@ -28,8 +28,8 @@
           <i aria-hidden="true" class="lnil lnil-user-alt"></i>
         </div>
         <div class="meta">
-          <span>Profile</span>
-          <span>View your profile</span>
+          <span>Dados Cadastrais</span>
+          <span> Edite seus dados</span>
         </div>
       </a>
 
@@ -40,8 +40,8 @@
           <i aria-hidden="true" class="lnil lnil-briefcase"></i>
         </div>
         <div class="meta">
-          <span>Projects</span>
-          <span>All my projects</span>
+          <span>Saques</span>
+          <span>Saque o valor de suas vendas</span>
         </div>
       </a>
 
@@ -50,14 +50,14 @@
           <i aria-hidden="true" class="lnil lnil-users-alt"></i>
         </div>
         <div class="meta">
-          <span>Team</span>
-          <span>Manage your team</span>
+          <span>Colaboradores</span>
+          <span>Adicione subusuários para a sua conta</span>
         </div>
       </a>
 
       <hr class="dropdown-divider" />
 
-      <a href="#" role="menuitem" class="dropdown-item is-media">
+      <!--<a href="#" role="menuitem" class="dropdown-item is-media">
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-cog"></i>
         </div>
@@ -65,7 +65,7 @@
           <span>Settings</span>
           <span>Account settings</span>
         </div>
-      </a>
+      </a>-->
 
       <hr class="dropdown-divider" />
 
@@ -79,7 +79,7 @@
             raised
             fullwidth
           >
-            Logout
+            Desconectar
           </V-Button>
         </RouterLink>
       </div>
