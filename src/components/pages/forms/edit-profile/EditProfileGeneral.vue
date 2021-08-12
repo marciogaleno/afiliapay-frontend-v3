@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
-import { computed, ref } from 'vue'
+import { computed, ref, reactive } from 'vue'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 import { Form, Field } from 'vee-validate'
 import { required } from '@vee-validate/rules'
+import { typePersonSelected } from '/@src/state/typePerson'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -42,7 +43,7 @@ const schema = {
   country: 'required',
 }
 
-const user = ref({
+const user = reactive({
   name: '',
   cpf: '',
   last_name: '',
@@ -81,6 +82,12 @@ const onAddFile = (error: any, file: any) => {
 
   console.log('file added', file)
 }
+
+// const setTypePerson = () => {
+//   typePersonSelected = user.typePerson;
+//   return;
+// }
+
 const onRemoveFile = (error: any, file: any) => {
   if (error) {
     console.error(error)
@@ -200,6 +207,7 @@ const onSave = async () => {
                       PF: 'Pessoa Fisica',
                       PJ: 'Pessoa Juridica',
                     }"
+                    @click="typePersonSelected = user.typePerson"
                   />
                 </V-Control>
               </V-Field>

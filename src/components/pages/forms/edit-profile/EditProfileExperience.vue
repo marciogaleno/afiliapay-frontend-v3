@@ -3,6 +3,7 @@ import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
+import { typePersonSelected } from '/@src/state/typePerson'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -87,57 +88,67 @@ const onSave = async () => {
         <div v-else class="fieldset-heading">
           <a class="action-link" @click="isUploading = false">Cancel</a>
         </div>
-        <!--CNH-->
-        <div class="fieldset">
-          <V-Field grouped>
-            <V-CardMedia>
-              <div v-if="!isUploading" class="fieldset-heading">
-                <h4>Foto da CNH</h4>
-              </div>
-              <V-Control>
-                <div class="file has-name">
-                  <label class="file-label">
-                    <input class="file-input" type="file" name="resume" />
-                    <span class="file-cta">
-                      <span class="file-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                      </span>
-                      <span class="file-label"> Choose a file… </span>
-                    </span>
-                    <span class="file-name light-text">
-                      22082020_project_budget.xls
-                    </span>
-                  </label>
+
+        <div v-if="typePersonSelected == 'PF'">
+          <!--CNH-->
+          <div class="fieldset">
+            <V-Field grouped>
+              <V-CardMedia>
+                <div v-if="!isUploading" class="fieldset-heading">
+                  <h4>Foto da CNH</h4>
                 </div>
-              </V-Control>
-            </V-CardMedia>
-          </V-Field>
+                <V-Control>
+                  <div class="file has-name">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-cloud-upload-alt"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                      <span class="file-name light-text">
+                        22082020_project_budget.xls
+                      </span>
+                    </label>
+                  </div>
+                </V-Control>
+              </V-CardMedia>
+            </V-Field>
+          </div>
+          <!--residencia-->
+          <div class="fieldset">
+            <V-Field grouped>
+              <V-CardMedia>
+                <div v-if="!isUploading" class="fieldset-heading">
+                  <h4>Foto do comprovante de residencia</h4>
+                </div>
+                <V-Control>
+                  <div class="file has-name">
+                    <label class="file-label">
+                      <V-FilePond
+                        class="file-input"
+                        type="file"
+                        name="resume"
+                      />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-cloud-upload-alt"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                      <span class="file-name light-text">
+                        22082020_project_budget.xls
+                      </span>
+                    </label>
+                  </div>
+                </V-Control>
+              </V-CardMedia>
+            </V-Field>
+          </div>
         </div>
-        <!--residencia-->
-        <div class="fieldset">
-          <V-Field grouped>
-            <V-CardMedia>
-              <div v-if="!isUploading" class="fieldset-heading">
-                <h4>Foto do comprovante de residencia</h4>
-              </div>
-              <V-Control>
-                <div class="file has-name">
-                  <label class="file-label">
-                    <V-FilePond class="file-input" type="file" name="resume" />
-                    <span class="file-cta">
-                      <span class="file-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                      </span>
-                      <span class="file-label"> Choose a file… </span>
-                    </span>
-                    <span class="file-name light-text">
-                      22082020_project_budget.xls
-                    </span>
-                  </label>
-                </div>
-              </V-Control>
-            </V-CardMedia>
-          </V-Field>
+        <div v-else>
+          <h3>upload de pessoa juridica</h3>
         </div>
       </div>
     </div>
