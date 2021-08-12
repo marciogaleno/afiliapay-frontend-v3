@@ -30,7 +30,7 @@ const projects = [
 const selectedProject = ref(projects[1])
 </script>
 
-<template>
+<!--<template>
   <V-Dropdown class="project-dropdown" spaced>
     <template #button="{ toggle }">
       <V-Avatar
@@ -67,4 +67,4 @@ const selectedProject = ref(projects[1])
       </a>
     </template>
   </V-Dropdown>
-</template>
+</template>-->

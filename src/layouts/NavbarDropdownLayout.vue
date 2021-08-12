@@ -163,7 +163,6 @@ watch(
 
         <div class="separator"></div>
 
-        <ProjectsQuickDropdown />
         <h1 class="title is-5">Dashboard</h1>
       </template>
 

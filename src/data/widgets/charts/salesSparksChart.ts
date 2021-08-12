@@ -58,7 +58,7 @@ export const spark1 = {
     type: 'datetime',
   },
   title: {
-    text: 'Total Sales',
+    text: 'Ganhos de Hoje',
     offsetX: 5,
     style: {
       fontSize: '24px',
@@ -112,7 +112,7 @@ export const spark2 = {
     type: 'datetime',
   },
   title: {
-    text: 'Total Profit',
+    text: 'Ganhos do mês',
     offsetX: 5,
     style: {
       fontSize: '24px',
@@ -166,7 +166,7 @@ export const spark3 = {
     },
   },
   title: {
-    text: 'Total Orders',
+    text: 'Saldo Pendente',
     offsetX: 5,
     style: {
       fontSize: '24px',
@@ -220,7 +220,7 @@ export const spark4 = {
     },
   },
   title: {
-    text: 'Consolidated Profit',
+    text: 'Disponível para saque',
     offsetX: 5,
     style: {
       fontSize: '24px',

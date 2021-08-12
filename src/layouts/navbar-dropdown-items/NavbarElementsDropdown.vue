@@ -39,30 +39,34 @@ watch([() => route.fullPath, dropdownElement], () => {
         :class="[selectedCategory !== '' && 'is-hidden']"
       >
         <div class="title-wrap">
-          <h4>Select a category</h4>
+          <h4>Vendas</h4>
         </div>
         <div class="category-selector-inner">
           <!-- Interaction Item -->
           <div class="category-item" @click="selectedCategory = 'interaction'">
-            <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
-            <span>Interaction</span>
+            <i aria-hidden="true" class="lnil lnil-sales-report"></i>
+            <span>Todas as Vendas</span>
           </div>
           <!-- Advanced Item -->
           <div class="category-item" @click="selectedCategory = 'advanced'">
-            <i aria-hidden="true" class="lnil lnil-Website"></i>
-            <span>Advanced</span>
+            <i aria-hidden="true" class="lnil lnil-cart-down"></i>
+            <span>Recuperar Carrinho</span>
           </div>
           <!-- Addons Item -->
           <div class="category-item" @click="selectedCategory = 'addons'">
-            <i aria-hidden="true" class="lnil lnil-code"></i>
-            <span>Addons</span>
+            <i aria-hidden="true" class="lnil lnil-dollar-down"></i>
+            <span>Pedidos de Reembolso</span>
+          </div>
+          <div class="category-item" @click="selectedCategory = 'addons'">
+            <i aria-hidden="true" class="lnil lnil-flight-search"></i>
+            <span>Rastreio</span>
           </div>
 
-          <img
+          <!--<img
             class="placeholder-image light-image"
             src="/@src/assets/illustrations/components/buttons.svg"
             alt=""
-          />
+          />-->
           <img
             class="placeholder-image dark-image"
             src="/@src/assets/illustrations/components/buttons-dark.svg"
