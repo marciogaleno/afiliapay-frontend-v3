@@ -55,12 +55,15 @@ onMounted(() => {
       />
 
       <div class="start">
-        <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
-        <p>We're very happy to see you again on your dashboard.</p>
+        <h3 class="dark-inverted">Bem-vindo de volta, Erik Kovalsky</h3>
+        <p>
+          Aqui é o seu dashboard e onde você pode controlar todo o seu negócio
+          digital.
+        </p>
       </div>
       <div class="end">
-        <V-Button dark="3">View Reports</V-Button>
-        <V-Button color="primary" elevated>Transactions</V-Button>
+        <V-Button dark="3">Ver todos os relatórios</V-Button>
+        <V-Button color="primary" elevated>Indique e Ganhe</V-Button>
       </div>
     </div>
 
@@ -145,6 +148,62 @@ onMounted(() => {
         </div>
         <div class="column is-5">
           <div class="dashboard-card flex-chart">
+            <div class="card-head">
+              <h3 class="dark-inverted">A sua divisão de vendas está em:</h3>
+            </div>
+            <div class="chart-group">
+              <div class="group">
+                <div class="group-content">
+                  <div class="chart-container">
+                    <apexchart
+                      id="group-radial-1"
+                      :height="radialGroup1Options.chart.height"
+                      :type="radialGroup1Options.chart.type"
+                      :series="radialGroup1Options.series"
+                      :options="radialGroup1Options"
+                    >
+                    </apexchart>
+                  </div>
+                  <span class="dark-inverted">15%</span>
+                  <p>cartão de crédito</p>
+                </div>
+              </div>
+              <div class="group">
+                <div class="group-content">
+                  <div class="chart-container">
+                    <apexchart
+                      id="group-radial-2"
+                      :height="radialGroup2Options.chart.height"
+                      :type="radialGroup2Options.chart.type"
+                      :series="radialGroup2Options.series"
+                      :options="radialGroup2Options"
+                    >
+                    </apexchart>
+                  </div>
+                  <span class="dark-inverted">45%</span>
+                  <p>pix</p>
+                </div>
+              </div>
+              <div class="group">
+                <div class="group-content">
+                  <div class="chart-container">
+                    <apexchart
+                      id="group-radial-3"
+                      :height="radialGroup3Options.chart.height"
+                      :type="radialGroup3Options.chart.type"
+                      :series="radialGroup3Options.series"
+                      :options="radialGroup3Options"
+                    >
+                    </apexchart>
+                  </div>
+                  <span class="dark-inverted">18%</span>
+                  <p>Boletos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--sales renevue-->
+          <div class="dashboard-card flex-chart">
             <div class="chart-media">
               <div class="meta">
                 <h4 class="dark-inverted">Sales Revenue</h4>
@@ -167,61 +226,7 @@ onMounted(() => {
               </div>
             </div>
           </div>
-          <div class="dashboard-card flex-chart">
-            <div class="card-head">
-              <h3 class="dark-inverted">Additional Stats</h3>
-            </div>
-            <div class="chart-group">
-              <div class="group">
-                <div class="group-content">
-                  <div class="chart-container">
-                    <apexchart
-                      id="group-radial-1"
-                      :height="radialGroup1Options.chart.height"
-                      :type="radialGroup1Options.chart.type"
-                      :series="radialGroup1Options.series"
-                      :options="radialGroup1Options"
-                    >
-                    </apexchart>
-                  </div>
-                  <span class="dark-inverted">264</span>
-                  <p>New Deals</p>
-                </div>
-              </div>
-              <div class="group">
-                <div class="group-content">
-                  <div class="chart-container">
-                    <apexchart
-                      id="group-radial-2"
-                      :height="radialGroup2Options.chart.height"
-                      :type="radialGroup2Options.chart.type"
-                      :series="radialGroup2Options.series"
-                      :options="radialGroup2Options"
-                    >
-                    </apexchart>
-                  </div>
-                  <span class="dark-inverted">1,203</span>
-                  <p>Proposals</p>
-                </div>
-              </div>
-              <div class="group">
-                <div class="group-content">
-                  <div class="chart-container">
-                    <apexchart
-                      id="group-radial-3"
-                      :height="radialGroup3Options.chart.height"
-                      :type="radialGroup3Options.chart.type"
-                      :series="radialGroup3Options.series"
-                      :options="radialGroup3Options"
-                    >
-                    </apexchart>
-                  </div>
-                  <span class="dark-inverted">3,078</span>
-                  <p>Closed Deals</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!--sale-->
         </div>
 
         <div class="column is-3">

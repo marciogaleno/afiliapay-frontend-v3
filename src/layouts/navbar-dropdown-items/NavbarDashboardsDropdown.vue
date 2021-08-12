@@ -39,16 +39,25 @@ watch([() => route.fullPath, dropdownElement], () => {
         :class="[selectedCategory !== '' && 'is-hidden']"
       >
         <div class="title-wrap">
-          <h4>Select a category</h4>
+          <h4>O que deseja?</h4>
         </div>
         <div class="category-selector-inner">
-          <div class="category-item" @click="selectedCategory = 'base'">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
-            <span>Dashboards</span>
-          </div>
-          <div class="category-item" @click="selectedCategory = 'extras'">
-            <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
-            <span>Templates</span>
+          <!--<div class="category-item" @click="selectedCategory = 'base'">-->
+          <a href="/" class="category-item">
+            <div>
+              <i aria-hidden="true" class="lnil lnil-home"></i>
+              <span>Home</span>
+            </div>
+          </a>
+          <a href="/profile-edit" class="category-item">
+            <div>
+              <i aria-hidden="true" class="lnil lnil-user"></i>
+              <span>Dados cadatrais</span>
+            </div>
+          </a>
+          <div class="category-item">
+            <i aria-hidden="true" class="lnil lnil-dollar-card"></i>
+            <span>Saques</span>
           </div>
 
           <img
@@ -99,7 +108,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'navbar-dashboards' }"
                   class="dropdown-item is-media"
                 >
@@ -186,7 +195,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Video</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
               </div>
             </div>
           </div>
@@ -203,7 +212,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'navbar-dashboards-analytics' }"
                   class="dropdown-item is-media"
                 >
@@ -312,7 +321,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Course Board</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
               </div>
             </div>
           </div>
@@ -329,7 +338,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'navbar-dashboards-ecommerce-1' }"
                   class="dropdown-item is-media"
                 >
@@ -387,7 +396,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     />
                   </div>
                 </RouterLink>
-                <!--<RouterLink
+                <RouterLink
                   :to="{ name: 'inbox' }"
                   class="dropdown-item is-media"
                 >
@@ -397,8 +406,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Inbox</span>
                   </div>
-                </RouterLink>-->
-                <!--<RouterLink
+                </RouterLink>
+                <RouterLink
                   :to="{ name: 'messaging-v2' }"
                   class="dropdown-item is-media"
                 >
@@ -615,7 +624,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar="">
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'navbar-dashboards-charts-apex' }"
                   class="dropdown-item is-media"
                 >
@@ -680,7 +689,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Stat Widgets</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
               </div>
             </div>
           </div>
@@ -709,7 +718,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Wizard V1</span>
                   </div>
                 </RouterLink>-->
-                <RouterLink
+                <!--<RouterLink
                   :to="{ name: 'navbar-layouts-form-layouts-1' }"
                   class="dropdown-item is-media"
                 >
@@ -752,7 +761,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   <div class="meta">
                     <span>Layout V4</span>
                   </div>
-                </RouterLink>
+                </RouterLink>-->
               </div>
             </div>
           </div>
